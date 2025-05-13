@@ -140,9 +140,9 @@ footer .f_btn .kakao::before{content: '';display: inline-block;width: 41px;heigh
 .mo_main .sec_main02 ul{margin-top: 40px;gap: 0;}
 .mo_main .sec_main02 ul li{flex:none;max-width: 352px;}
 .mo_main .sec_main03{padding: 60px 0;}
-.sec_main03 .flexbox{margin-top: 43px;flex-direction: column;}
-.sec_main03 .flexbox ul{gap:16px;width: 100%;}
-.sec_main03 .flexbox ul li{padding: 20px;font-size: 15px;}
-.sec_main03 .flexbox > div{flex:none;margin-top: 50px;}
-.sec_main03 .title{font-size: 24px;}
-.sec_main03 .text{margin-top: 17px;}
+.mo_main .sec_main03 .flexbox{margin-top: 43px;flex-direction: column;}
+.mo_main .sec_main03 .flexbox ul{gap:16px;width: 100%;}
+.mo_main .sec_main03 .flexbox ul li{padding: 20px;font-size: 15px;}
+.mo_main .sec_main03 .flexbox > div{flex:none;margin-top: 50px;}
+.mo_main .sec_main03 .title{font-size: 24px;}
+.mo_main .sec_main03 .text{margin-top: 17px;}
