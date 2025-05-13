@@ -127,14 +127,11 @@
         <section class="sec_main04">
             <div class="section_inner">
                 <div class="flexbox">
-                    <div>
+                    <div data-aos="fade-left" data-aos-duration="2000">
                         <p class="tit_top">NAVER,KAKAO를 통한 스스로 영업 DB만들기</p>
                         <p class="title">비대면 보험 마케팅 STUDY</p>
-                        <div class="btnbox">
-                            <a href="#" class="btn_cm">참여하기</a>
-                        </div>
                     </div>
-                    <ul>
+                    <ul data-aos="fade-right" data-aos-duration="2000">
                         <li>매주 수요일 오후<br>
                             2시 장소 개별공지</li>
                         <li>2시간 진행</li>
@@ -143,26 +140,29 @@
                         <li>참여인원<br>
                             최대 5명</li>
                     </ul>
+                    <div class="btnbox" data-aos="fade-down" data-aos-duration="2000">
+                        <a href="#" class="btn_cm">참여하기</a>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="sec_main05">
-            <div class="section_inner">
+            <div class="section_inner" data-aos="fade-down" data-aos-duration="2000">
                 <h2>PARTNERSHIP</h2>
                 <ul>
-                    <li>
+                    <li data-aos="flip-left" data-aos-duration="1000">
                         <p class="tit">H.AI 솔루션</p>
                         <p class="txt">(주)라이프시맨틱스</p>
                     </li>
-                    <li>
+                    <li data-aos="flip-left" data-aos-duration="1000">
                         <p class="tit">광고매체 파트너사</p>
                         <p class="txt">보배드림,보맵,NAVER,KAKAO</p>
                     </li>
-                    <li>
+                    <li data-aos="flip-left" data-aos-duration="1000">
                         <p class="tit">보안 SSL</p>
                         <p class="txt">LG VPN</p>
                     </li>
-                    <li>
+                    <li data-aos="flip-left" data-aos-duration="1000">
                         <p class="tit">보험광고기획</p>
                         <p class="txt">(주)삼성펫프로</p>
                     </li>
@@ -171,77 +171,72 @@
         </section>
         <section class="sec_main06">
             <div class="section_inner">
-                <div class="flexbox">
-                    <div>
-                        <p class="title">PROJECT Portfolio</p>
-                        <div class="btnbox">
-                            <a href="#" class="btn_cm">더보기</a>
-                        </div>
-                    </div>
-                    <div class="swiper mainSwiper">
-                        <ul class="swiper-wrapper">
-                            <li class="swiper-slide">
-                                <img src="resource/images/img_sec_main06_1.png" alt="">
-                            </li>
-                            <li class="swiper-slide">
-                                <img src="resource/images/img_sec_main06_2.png" alt="">
-                            </li>
-                            <li class="swiper-slide">
-                                <img src="resource/images/img_sec_main06_3.png" alt="">
-                            </li>
-                            <li class="swiper-slide">
-                                <img src="resource/images/img_sec_main06_4.png" alt="">
-                            </li>
-                            <li class="swiper-slide">
-                                <img src="resource/images/img_sec_main06_5.png" alt="">
-                            </li>
-                        </ul>
-                    </div>
+                <h2 data-aos="fade-down" data-aos-duration="2000">PROJECT Portfolio</h2>
+                <div class="swiper mainSwiper" data-aos="fade-down" data-aos-duration="2000">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <img src="resource/images/img_sec_main06_1.png" alt="">
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="resource/images/img_sec_main06_2.png" alt="">
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="resource/images/img_sec_main06_3.png" alt="">
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="resource/images/img_sec_main06_4.png" alt="">
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="resource/images/img_sec_main06_5.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+                <div class="mainSwiper-pagination"></div>
 
-                    <!-- Initialize Swiper -->
-                    <script>
-                        var swiper = new Swiper(".mainSwiper", {
-                            slidesPerView: "auto",
-                            autoplay: {
-                                delay: 5000,
-                            },
-                            spaceBetween: 16,
-                            grabCursor: true,
-                            pagination: {
-                                el: ".swiper-pagination01",
-                                clickable: true,
-                                type: 'bullets'
-                            }
-                        });
-                    </script>
+                <!-- Initialize Swiper -->
+                <script>
+                    var swiper = new Swiper(".mainSwiper", {
+                        slidesPerView: "auto",
+                        centeredSlides: true,
+                        spaceBetween: 16,
+                        grabCursor: true,
+                        pagination: {
+                            el: ".mainSwiper-pagination",
+                            clickable: true,
+                            type: 'bullets'
+                        }
+                    });
+                </script>
+                <div class="btnbox" data-aos="fade-up" data-aos-duration="2000">
+                    <a href="#" class="btn_cm">더보기</a>
                 </div>
             </div>
         </section>
         <section class="sec_main07">
             <div class="section_inner">
-                <h2>상담신청</h2>
-                <p class="h2_sub">궁금한 게 있다면 지금 물어보세요! Inskill 팀이 바로 도와드려요.</p>
+                <h2 data-aos="fade-left" data-aos-duration="2000">상담신청</h2>
+                <p class="h2_sub" data-aos="fade-left" data-aos-duration="2000">궁금한 게 있다면 지금 물어보세요! <br>Inskill 팀이 바로 도와드려요.</p>
                 <div class="gridbox">
-                    <input type="text" placeholder="이름">
-                    <input type="text" placeholder="핸드폰 번호">
-                    <input type="text" placeholder="상담 가능 및 지역">
-                    <textarea name="" id="" placeholder="문의내용"></textarea>
+                    <input type="text" placeholder="이름" data-aos="fade-left" data-aos-duration="2000">
+                    <input type="text" placeholder="핸드폰 번호" data-aos="fade-left" data-aos-duration="2000">
+                    <input type="text" placeholder="상담 가능 및 지역" data-aos="fade-left" data-aos-duration="2000">
+                    <textarea name="" id="" placeholder="문의내용" data-aos="fade-left" data-aos-duration="2000"></textarea>
                 </div>
-                <button class="btn_cm">상담신청</button>
+                <button class="btn_cm" data-aos="fade-up" data-aos-duration="2000">상담신청</button>
             </div>
         </section>
         <footer>
             <div class="footer_inner">
-
+                <div class="f_btn">
+                    <a href="#" class="kakao">카카오톡 상담 신청하기</a>
+                </div>
                 <a href="#" class="f_logo"></a>
                 <p class="f_txt">
                     사업자 등록번호 : 750-87-1594<br>
                     서울특별시 구로구 디지털로34길 43, 908호 / 1544-9474<br>
-                    대표 :정상하 COPYRIGHT (C) SSENE. ALL RIGHTS RESERVED.
+                    대표 :정상하<br>
+                    COPYRIGHT (C) SSENE. ALL RIGHTS RESERVED.
                 </p>
-                <div class="f_btn">
-                    <a href="#" class="kakao">카카오톡 상담 신청하기</a>
-                </div>
             </div>
         </footer>
     </div>

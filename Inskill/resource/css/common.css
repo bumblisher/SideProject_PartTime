@@ -126,7 +126,7 @@ footer .f_btn .kakao::before{content: '';display: inline-block;width: 41px;heigh
 
 .mo_main .section_inner{max-width: 700px;padding: 0 20px;}
 .mo_main .section_inner h2{font-size: 32px;text-align: left;line-height: 130%;}
-.mo_main .section_inner .h2_sub{text-align: left;margin-top: 8px;font-size: 16px;}
+.mo_main .section_inner .h2_sub{text-align: left;margin-top: 8px;font-size: 16px;line-height: 130%;}
 
 .mo_main .btn_cm{min-width: auto;width: 199px;}
 
@@ -146,3 +146,25 @@ footer .f_btn .kakao::before{content: '';display: inline-block;width: 41px;heigh
 .mo_main .sec_main03 .flexbox > div{flex:none;margin-top: 50px;}
 .mo_main .sec_main03 .title{font-size: 24px;}
 .mo_main .sec_main03 .text{margin-top: 17px;}
+.mo_main .sec_main04{padding: 60px 0;}
+.mo_main .sec_main04 .flexbox{flex-direction: column;}
+.mo_main .sec_main04 .title{font-size: 32px;}
+.mo_main .sec_main04 .flexbox ul{margin-top: 54px;width: 100%;display: grid;grid-template-columns: 1fr 1fr;gap:11px}
+.mo_main .sec_main04 .flexbox ul li{font-size: 16px;}
+.mo_main .sec_main04 .btnbox{margin-top: 45px;text-align: center;}
+.mo_main .sec_main05 {padding: 60px 0;}
+.mo_main .sec_main05 ul{flex-direction: column;gap: 21px;}
+.mo_main .sec_main06{padding:60px 0}
+.mo_main .sec_main06 .mainSwiper{margin: 24px -20px 0;}
+.mo_main .sec_main06 .btnbox{margin-top: 27px;text-align: center;}
+.mo_main .sec_main06 .mainSwiper-pagination{margin-top: 12px;text-align: center;}
+.mo_main .sec_main06 .swiper-pagination-bullet{width: 10px;height: 10px;}
+.mo_main .sec_main06 .swiper-pagination-bullet-active{background: #FB9C46;}
+.mo_main .sec_main07{padding: 60PX 0;}
+.mo_main .sec_main07 .gridbox{margin-top: 34px;gap: 16px;grid-template-columns: 1fr;}
+.mo_main .sec_main07 .gridbox input{grid-column: auto;grid-row: auto;}
+.mo_main .sec_main07 .gridbox textarea{grid-column: auto;grid-row: auto;height: 197px;}
+footer .footer_inner{flex-direction: column;padding:60px 20px;max-width: 700px;gap:0;}
+footer .f_btn{margin: 0 auto;}
+footer .f_logo{margin: 47px auto 0;}
+footer .f_txt{font-size: 14px;line-height: 30px;text-align:center;}
