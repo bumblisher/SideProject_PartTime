@@ -164,7 +164,7 @@ footer .f_btn .kakao::before{content: '';display: inline-block;width: 41px;heigh
 .mo_main .sec_main07 .gridbox{margin-top: 34px;gap: 16px;grid-template-columns: 1fr;}
 .mo_main .sec_main07 .gridbox input{grid-column: auto;grid-row: auto;font-size: 16px;}
 .mo_main .sec_main07 .gridbox textarea{grid-column: auto;grid-row: auto;height: 197px;font-size: 16px;}
-footer .footer_inner{flex-direction: column;padding:60px 20px;max-width: 700px;gap:0;}
-footer .f_btn{margin: 0 auto;}
-footer .f_logo{margin: 47px auto 0;}
-footer .f_txt{font-size: 14px;line-height: 30px;text-align:center;}
+.mo_main footer .footer_inner{flex-direction: column;padding:60px 20px;max-width: 700px;gap:0;}
+.mo_main footer .f_btn{margin: 0 auto;}
+.mo_main footer .f_logo{margin: 47px auto 0;}
+.mo_main footer .f_txt{font-size: 14px;line-height: 30px;text-align:center;}
