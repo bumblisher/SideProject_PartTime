@@ -86,6 +86,7 @@
                         </li>
                     </ul>
                 </div>
+                <div class="mainSwiper2-pagination"></div>
                 <!-- Initialize Swiper -->
                 <script>
                     var swiper = new Swiper(".mainSwiper2", {
@@ -93,6 +94,11 @@
                         centeredSlides: true,
                         spaceBetween: 30,
                         grabCursor: true,
+                        pagination: {
+                            el: ".mainSwiper2-pagination",
+                            clickable: true,
+                            type: 'bullets'
+                        }
                     });
                 </script>
             </div>
