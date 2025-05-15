@@ -192,7 +192,6 @@
 .sec_card01 .title{margin-top: 29px;font-size: 60px;font-weight: 700;line-height: 130%;color:#fff}
 .sec_card01 .txt_gradi{font-weight: 700;background: linear-gradient(118deg,#3BA4FF 0%, #972FFF 100%);background-clip: text;-webkit-background-clip: text;color: transparent;-webkit-text-fill-color: transparent;}
 .sec_card01 img{width: 702px;height: 499px;margin-left: auto;}
-
 .sec_card02{position: relative;margin-top: -60px;padding: 86px 0 80px;background: #fff;border-radius: 60px 60px 0 0;}
 .sec_card02 .section_inner .txt_top{font-size: 20px;font-weight: 700;line-height: 43px;color:#5C2FFF}
 .sec_card02 .section_inner h2{text-align: left;}
@@ -305,12 +304,10 @@
 .sec_card13 ul li img{display: block;}
 .sec_card13 ul li p{font-size: 20px;font-weight: 700;line-height: 43px;margin-top: 11px;}
 
-
 .card footer{background-color: #303030;overflow: hidden;}
 .card footer .footer_inner{position: relative;padding: 45px 0 46px; max-width: 1280px;display: flex;flex-direction: column;align-items: center;margin: 0 auto;gap:18px}
 .card footer .f_logo{display: block;flex:none; width: 131px;height: 42px;background: url('../images/logo_white.svg') no-repeat center;}
 .card footer .f_txt{font-size: 14px;line-height: 22px;color:#d6d6d6}
-
 
 .card .sec_card_footer{padding: 102px 0;background:linear-gradient(118deg, #385EF6 0%, #6D45FF 100%);overflow: hidden;}
 .card .sec_card_footer .section_inner{display: flex;flex-direction: column;align-items: center;}
@@ -319,4 +316,40 @@
 .card .sec_card_footer .section_inner .txt{font-size: 24px;font-weight: 700;line-height: 32px;color:#fff;text-align: center;margin-top: 28px;}
 .card .sec_card_footer .kakao{margin-top: 28px;display: inline-flex;align-items: center;padding: 12px 23px;background:#FFE81E;color:#000;font-size: 16px;font-weight: 600;border-radius: 32px;}
 .card .sec_card_footer .kakao::before{content: '';display: inline-block;width: 41px;height: 42px;background: url('../images/ico_footer_kakao.svg') no-repeat center;margin-right: 10px;}
+
+/* 카드 모바일 */
+.card.wrap{position: relative;min-width: 393px;max-width: 700px;margin: 0 auto;box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);}
+
+.card header{height: auto;position: absolute;top: 60px;left: 0;right: 0;padding: 0;}
+.card header .header_inner{width: auto;padding: 0;display: flex;align-items: center;border:0}
+.card header .logo{width: 120px;height: 38px;}
+
+.card .section_inner{max-width:700px;padding: 0 20px;}
+.card .section_inner h2{font-size: 40px;font-weight: 700;color:#000;text-align: center;}
+.card .section_inner h2 .pt{color:#5C2FFF}
+.card .section_inner .h2_sub{margin-top: 20px;font-size: 18px;color:#5E6874;text-align: center;}
+
+
+.sec_card01{padding: 0;background: linear-gradient(118deg, #06164B 0%, #583FEC 100%);}
+.sec_card01::before{width: 300px;height: 250px;background-size: contain;}
+.sec_card01::after{width: 250px;height: 300px;background-size: contain;}
+.sec_card01 .section_inner{flex-direction: column;padding: 140px 20px 100px;}
+.sec_card01 .section_inner > div{text-align: center;}
+.sec_card01 .badge{font-size: 16px;line-height: 130%;display: inline-block;}
+.sec_card01 .title{margin-top: 22px;font-size: 38px;}
+.sec_card01 img{width: 355px;height: 252px;margin: 67px auto 0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
