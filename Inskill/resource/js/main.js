@@ -10,6 +10,19 @@ $(function () {
 		}
 	});
 
+	// 아코디언
+	$(".list_acco button").on("click", function () {
+		if ($(this).parent().hasClass("on")) {
+			$(this).next().slideUp(300);
+			$(this).parent().removeClass("on");
+		}else {
+			$(".list_acco li").removeClass("on");
+			$(".list_acco li > div").slideUp(300);
+			$(this).parent().addClass("on");
+			$(this).next().slideDown(300);
+		}
+	});
+
 	// 햄버거 메뉴
 	// $(".btn_menu").on("click", function () {
 	// 	$(this).toggleClass("on");
