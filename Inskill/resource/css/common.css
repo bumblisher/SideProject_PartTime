@@ -363,7 +363,7 @@
 .mob .sec_card04 .ulbox ul li:last-child{grid-column: 1 / 3;}
 .mob .sec_card05{padding: 60px 0;}
 .mob .sec_card05 .tabbox{margin-top: 24px;display: flex;gap:9px;border-radius: 16px;background: #DDE8FF;padding:6px;}
-.mob .sec_card05 .tabbox button{flex:1;display: inline-flex;align-items: center;justify-content: center;color:#B5BEF3;font-size: 18px;font-weight: 700;height: 48px;border-radius: 12px;}
+.mob .sec_card05 .tabbox button{flex:1;display: inline-flex;align-items: center;justify-content: center;color:#B5BEF3;background: #fff;font-size: 18px;font-weight: 700;height: 48px;border-radius: 12px;}
 .mob .sec_card05 .tabbox button.on{background: linear-gradient(158deg, #385EF6 0%, #6D45FF 100%);color:#fff;}
 .mob .sec_card05 .flexbox{margin-top: 24px;display: block;}
 .mob .sec_card05 .flexbox > div{border-radius: 18px;padding: 0;}
