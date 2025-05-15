@@ -278,7 +278,7 @@
 .sec_card11 .flexbox{gap:65px;align-items: center;}
 .sec_card11 .flexbox > img{flex:none}
 .sec_card11 ul{margin-top: 32px;}
-.sec_card11 ul li button{padding: 20px;display: flex;align-items: center;width: 100%;box-sizing: border-box;background: #fff;font-size: 18px;font-weight: 700;line-height: 130%;text-align: left;border-bottom: 1px solid #B2B2B2;}
+.sec_card11 ul li button{color:#000;padding: 20px;display: flex;align-items: center;width: 100%;box-sizing: border-box;background: #fff;font-size: 18px;font-weight: 700;line-height: 130%;text-align: left;border-bottom: 1px solid #B2B2B2;}
 .sec_card11 ul li button::after{content: '';display: inline-block;width: 24px;height: 24px;flex:none;margin-left: auto;background: url(../images/ico_acco.svg) no-repeat center;transition: all 0.3s;}
 .sec_card11 ul li .cont{display: none;padding:20px 20px 32px}
 .sec_card11 ul li .cont p{font-size: 16px;line-height: 130%;}
@@ -384,7 +384,7 @@
 .mob .sec_card08{padding: 60px 0;}
 .mob .sec_card08 ul{margin: 40px -20px 0;gap: 38px;display: flex;overflow: auto;}
 .mob .sec_card08 ul li:first-child{margin-left: 20px;}
-.mob .sec_card08 ul li:last-child{margin-right: 20px;}
+.mob .sec_card08 ul li:last-child{padding-right: 20px;}
 .mob .sec_card08 ul li img{width: 160px;}
 .mob .sec_card08 ul li p{margin-top: 12px;line-height: 26px;font-size: 16px;}
 .mob .sec_card09{padding: 60px 0;background: #fff;}
@@ -406,7 +406,7 @@
 .mob .sec_card13{padding: 60px 0;}
 .mob .sec_card13 ul{margin: 40px -20px 0;gap: 16px;display: flex;overflow: auto;}
 .mob .sec_card13 ul li:first-child{margin-left: 20px;}
-.mob .sec_card13 ul li:last-child{margin-right: 20px;}
+.mob .sec_card13 ul li:last-child{padding-right: 20px;}
 .mob.card .sec_card_footer{padding: 60px 0;}
 .mob.card .sec_card_footer .section_inner .h2_sub{color:#fff}
 .mob.card .sec_card_footer .section_inner .txt{font-size: 20px;line-height: 30px;margin-top: 18px;}
