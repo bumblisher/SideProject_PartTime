@@ -256,22 +256,30 @@
                     </div>
                     <ul>
                         <li data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
-                            <div><p class="tit">주문결제 완료</p></div>
+                            <div>
+                                <p class="tit">주문결제 완료</p>
+                            </div>
                         </li>
                         <li data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">
-                            <div><p class="tit">접수상담</p>
-                            <p class="txt">전화 또는 카카오톡 상담을<br>
-                                통해 상세 상담 진행</p></div>
+                            <div>
+                                <p class="tit">접수상담</p>
+                                <p class="txt">전화 또는 카카오톡 상담을<br>
+                                    통해 상세 상담 진행</p>
+                            </div>
                         </li>
                         <li data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
-                            <div><p class="tit">개통진행</p>
-                            <p class="txt">필요서류 안내 및 접수<br>
-                                심사 후 가맹 및 전산등록</p></div>
+                            <div>
+                                <p class="tit">개통진행</p>
+                                <p class="txt">필요서류 안내 및 접수<br>
+                                    심사 후 가맹 및 전산등록</p>
+                            </div>
                         </li>
                         <li data-aos="fade-up" data-aos-duration="2000" data-aos-delay="400">
-                            <div><p class="tit">​제품발송</p>
-                            <p class="txt">택배사로부터 1~3일<Br>
-                                소요 예정</p></div>
+                            <div>
+                                <p class="tit">​제품발송</p>
+                                <p class="txt">택배사로부터 1~3일<Br>
+                                    소요 예정</p>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -336,11 +344,35 @@
         </section>
         <section class="sec_card12">
             <div class="section_inner" data-aos="fade-up" data-aos-duration="2000">
-                <img src="resource/images/img_card12.svg" alt="" data-aos="fade-up" data-aos-duration="2000">
+                <p class="txt_top">Spec</p>
+                <h2>기기 상세 스펙</h2>
+                <div class="swiper mainSwiper2" data-aos="fade-up" data-aos-duration="2000">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <img src="resource/images/img_mo_card12_1.svg" alt="">
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="resource/images/img_mo_card12_2.svg" alt="">
+                        </li>
+                    </ul>
+                </div>
+                <div class="mainSwiper2-pagination"></div>
+                <!-- Initialize Swiper -->
+                <script>
+                    var swiper = new Swiper(".mainSwiper2", {
+                        slidesPerView: "auto",
+                        centeredSlides: true,
+                        spaceBetween: 30,
+                        grabCursor: true,
+                        pagination: {
+                            el: ".mainSwiper2-pagination",
+                            clickable: true,
+                            type: 'bullets'
+                        }
+                    });
+                </script>
                 <div class="flexbox">
                     <div>
-                        <p class="txt_top">Spec</p>
-                        <h2>기기 상세 스펙</h2>
                         <ul>
                             <li data-aos="fade-left" data-aos-duration="2000">
                                 <p class="tit">색상/크기</p>

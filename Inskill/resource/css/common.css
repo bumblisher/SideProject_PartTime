@@ -394,18 +394,21 @@
 .mob .sec_card10 .flexbox ul{margin: 25px auto 0;flex-direction: column;width: 100%;max-width: 480px;}
 .mob .sec_card10 .flexbox ul li{width: 100%;display: flex;align-items: center;padding: 20px;text-align: left;}
 .mob .sec_card10 .flexbox ul li::before{width: 80px;height: 80px;;margin: 0 24px 0 0;}
-.sec_card11{padding: 60px 0;}
-.sec_card11 ul li .cont p br{display: none;}
-.sec_card12{padding:60px 0}
-.sec_card12 .section_inner .txt_top{text-align: center;}
-.sec_card12 .flexbox ul{gap: 16px;}
-.sec_card12 .flexbox ul li .tit{width: 100px;margin-right: 16px;flex:none}
-.sec_card13{padding: 60px 0;}
-.sec_card13 ul{margin: 40px -20px 0;gap: 16px;display: flex;overflow: auto;}
-.sec_card13 ul li:first-child{margin-left: 20px;}
-.sec_card13 ul li:last-child{margin-right: 20px;}
-.card .sec_card_footer{padding: 60px 0;}
-.card .sec_card_footer .section_inner .h2_sub{color:#fff}
-.card .sec_card_footer .section_inner .txt{font-size: 20px;line-height: 30px;margin-top: 18px;}
-.card .sec_card_footer .kakao{margin-top: 48px;}
-.card footer .footer_inner{padding: 40px 0;}
+.mob .sec_card11{padding: 60px 0;}
+.mob .sec_card11 ul li .cont p br{display: none;}
+.mob .sec_card12{padding:60px 0}
+.mob .sec_card12 .mainSwiper2 {max-width: 353px;}
+.mob .sec_card12 .mainSwiper2-pagination{text-align: center;}
+.mob .sec_card12 .section_inner .txt_top{text-align: center;}
+.mob .sec_card12 .flexbox ul{gap: 16px;}
+.mob .sec_card12 .flexbox ul li .tit{width: 100px;margin-right: 16px;flex:none}
+.mob .sec_card12 .flexbox ul li .txt{word-break: keep-all;}
+.mob .sec_card13{padding: 60px 0;}
+.mob .sec_card13 ul{margin: 40px -20px 0;gap: 16px;display: flex;overflow: auto;}
+.mob .sec_card13 ul li:first-child{margin-left: 20px;}
+.mob .sec_card13 ul li:last-child{margin-right: 20px;}
+.mob.card .sec_card_footer{padding: 60px 0;}
+.mob.card .sec_card_footer .section_inner .h2_sub{color:#fff}
+.mob.card .sec_card_footer .section_inner .txt{font-size: 20px;line-height: 30px;margin-top: 18px;}
+.mob.card .sec_card_footer .kakao{margin-top: 48px;}
+.mob.card footer .footer_inner{padding: 40px 0;}
