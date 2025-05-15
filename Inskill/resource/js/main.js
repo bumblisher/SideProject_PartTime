@@ -30,17 +30,17 @@ $(function () {
 	// });
 
 	// 탭
-	// $(".subtab_wrap ul li button").on("click", function () {
-	// 	$(".subtab_wrap ul li").removeClass("on");
-	// 	$(this).parent().addClass("on");
-	// 	if ($(this).parent().index() == 0) {
-	// 		$(".subtab_cont.dog").show();
-	// 		$(".subtab_cont.cat").hide();
-	// 	} else if ($(this).parent().index() == 1) {
-	// 		$(".subtab_cont.dog").hide();
-	// 		$(".subtab_cont.cat").show();
-	// 	}
-	// });
+	$(".tabbox button").on("click", function () {
+		$(".tabbox button").removeClass("on");
+		$(this).addClass("on");
+		if ($(this).index() == 0) {
+			$(this).parent().next().children("div").hide();
+			$(this).parent().next().children("div:nth-child(1)").show();
+		} else if ($(this).index() == 1) {
+			$(this).parent().next().children("div").hide();
+			$(this).parent().next().children("div:nth-child(2)").show();
+		}
+	});
 
 });
 

@@ -40,20 +40,20 @@
         </section>
         <section class="sec_card02">
             <div class="section_inner" data-aos="fade-up" data-aos-duration="2000">
-                <div class="flexbox">
-                    <div>
-                        <p class="txt_top">Benefit</p>
-                        <h2>Our Services</h2>
-                        <p class="h2_sub">비대면 보험마케팅 교육부터 마케팅 DB까지</p>
-                    </div>
-                    <ul>
-                        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <div>
+                    <p class="txt_top">Benefit</p>
+                    <h2>Our Services</h2>
+                    <p class="h2_sub">비대면 보험마케팅 교육부터 마케팅 DB까지</p>
+                </div>
+                <div class="swiper mainSwiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                             <img src="resource/images/img_card02_1.svg" alt="">
                             <p class="tit">1%대 카드수수료</p>
-                            <p class="txt">물가 상승, 그리고 불경기로 힘든 사장님들의<br>
-                                부담을 줄이기 위해 카드 수수료 부담을 확 낮췄습니다.</p>
+                            <p class="txt">물가 상승, 그리고 불경기로 힘든<br> 사장님들의
+                                부담을 줄이기 위해 <br>카드 수수료 부담을 확 낮췄습니다.</p>
                         </li>
-                        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                        <li class="swiper-slide" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
                             <img src="resource/images/img_card02_2.svg" alt="">
                             <p class="tit">D+1 익일 정산</p>
                             <p class="txt">오늘 결제된 금액, 다음 날 바로 입금!<br>
@@ -61,25 +61,37 @@
                         </li>
                     </ul>
                 </div>
+                <div class="mainSwiper-pagination"></div>
+                <!-- Initialize Swiper -->
+                <script>
+                    var swiper = new Swiper(".mainSwiper", {
+                        slidesPerView: "1",
+                        spaceBetween: 30,
+                        grabCursor: true,
+                        pagination: {
+                            el: ".mainSwiper-pagination",
+                            clickable: true,
+                            type: 'bullets'
+                        }
+                    });
+                </script>
             </div>
         </section>
         <section class="sec_card03">
             <div class="section_inner" data-aos="fade-up" data-aos-duration="2000">
                 <h2>인스킬의 특별한 서비스,<br>
-                    <span class="pt">부담 없이 편하게</span> 이용하세요.
+                    <span class="pt">부담 없이 편하게</span><br> 이용하세요.
                 </h2>
                 <div class="gridbox">
                     <img src="resource/images/img_card03.svg" alt="" data-aos="fade-up" data-aos-duration="2000">
                     <ul>
                         <li data-aos="fade-left" data-aos-duration="2000">
                             <p class="tit">부담스런 기기값 NO</p>
-                            <p class="txt">무료로 지급되는 휴대용<br>
-                                카드결제 단말기</p>
+                            <p class="txt">무료로 지급되는 휴대용 카드결제 단말기</p>
                         </li>
                         <li data-aos="fade-right" data-aos-duration="2000">
                             <p class="tit">매출 조회 서비스</p>
-                            <p class="txt">월매출을 한번에 조회 할 수 있는<br>
-                                관리페이지 제공</p>
+                            <p class="txt">월매출을 한번에 조회 할 수 있는 관리페이지 제공</p>
                         </li>
                         <li data-aos="fade-left" data-aos-duration="2000">
                             <p class="tit">약정 및 위약금 없음</p>
@@ -121,9 +133,12 @@
             <div class="section_inner" data-aos="fade-up" data-aos-duration="2000">
                 <h2>국내/외 카드사 가맹 및<br>
                     각종 페이 무료 가입 서비스</h2>
-                <div class="flexbox">
-                    <div data-aos="flip-right" data-aos-duration="2000">
-                        <p class="title">국내</p>
+                <div class="tabbox">
+                    <button class="on">국내</button>
+                    <button>해외</button>
+                </div>
+                <div class="flexbox" data-aos="flip-right" data-aos-duration="2000">
+                    <div class="tab_cont">
                         <div class="cont">
                             <p class="tit">카드</p>
                             <img src="resource/images/img_card05_1.svg" alt="">
@@ -131,8 +146,7 @@
                             <img src="resource/images/img_card05_2.svg" alt="">
                         </div>
                     </div>
-                    <div data-aos="flip-left" data-aos-duration="2000">
-                        <p class="title">해외</p>
+                    <div class="tab_cont" style="display: none;">
                         <div class="cont">
                             <p class="tit">카드</p>
                             <img src="resource/images/img_card05_3.svg" alt="">
@@ -145,7 +159,7 @@
         </section>
         <section class="sec_card06">
             <div class="section_inner" data-aos="fade-up" data-aos-duration="2000">
-                <h2>휴대에 탁월한 <span class="pt">무선 카드 단말기</span></h2>
+                <h2>휴대에 탁월한 <br><span class="pt">무선 카드 단말기</span></h2>
                 <div class="flexbox">
                     <img src="resource/images/img_card06.png" alt="" data-aos="fade-up" data-aos-duration="2000">
                     <ul>
@@ -186,7 +200,7 @@
                     <p class="title">안정적이고 빠른 LTE망을 통해<br>
                         전국 어디서나 빠른 카드결제가 가능</p>
                     <p class="txt">초고속 SK망을 이용 전국 어디서나 끊김 없이 결제하기,<br>
-                        <b>통신비용 월11,000원만 지급 (VAT포함, 기본 12개월 필수가입)</b>
+                        <b>통신비용 월11,000원만 지급 <br>(VAT포함, 기본 12개월 필수가입)</b>
                     </p>
                 </div>
             </div>
@@ -238,26 +252,26 @@
                     <div>
                         <h2>수령 후 <span class="pt">바로 사용이 <br>가능한 카드 단말기</span><br>
                             주문 접수 방법</h2>
-                        <p class="h2_sub">*모든 필요서류 접수 및 심사완료 후 제품이 발송됩니다</p>
+                        <p class="h2_sub">*모든 필요서류 접수 및 심사완료 후 <br>제품이 발송됩니다</p>
                     </div>
                     <ul>
                         <li data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
-                            <p class="tit">주문결제 완료</p>
+                            <div><p class="tit">주문결제 완료</p></div>
                         </li>
                         <li data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">
-                            <p class="tit">접수상담</p>
+                            <div><p class="tit">접수상담</p>
                             <p class="txt">전화 또는 카카오톡 상담을<br>
-                                통해 상세 상담 진행</p>
+                                통해 상세 상담 진행</p></div>
                         </li>
                         <li data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
-                            <p class="tit">개통진행</p>
+                            <div><p class="tit">개통진행</p>
                             <p class="txt">필요서류 안내 및 접수<br>
-                                심사 후 가맹 및 전산등록</p>
+                                심사 후 가맹 및 전산등록</p></div>
                         </li>
                         <li data-aos="fade-up" data-aos-duration="2000" data-aos-delay="400">
-                            <p class="tit">​제품발송</p>
+                            <div><p class="tit">​제품발송</p>
                             <p class="txt">택배사로부터 1~3일<Br>
-                                소요 예정</p>
+                                소요 예정</p></div>
                         </li>
                     </ul>
                 </div>
@@ -317,14 +331,13 @@
                             </li>
                         </ul>
                     </div>
-                    <img src="resource/images/img_card11.png" alt="" data-aos="fade-up" data-aos-duration="2000">
                 </div>
             </div>
         </section>
         <section class="sec_card12">
             <div class="section_inner" data-aos="fade-up" data-aos-duration="2000">
+                <img src="resource/images/img_card12.svg" alt="" data-aos="fade-up" data-aos-duration="2000">
                 <div class="flexbox">
-                    <img src="resource/images/img_card12.svg" alt="" data-aos="fade-up" data-aos-duration="2000">
                     <div>
                         <p class="txt_top">Spec</p>
                         <h2>기기 상세 스펙</h2>
@@ -380,24 +393,24 @@
         <section class="sec_card13">
             <div class="section_inner" data-aos="fade-up" data-aos-duration="2000">
                 <h2>제품 구성 안내</h2>
-                <ul>
-                    <li data-aos="fade-down" data-aos-duration="2000" data-aos-delay="100">
+                <ul data-aos="fade-down" data-aos-duration="2000" data-aos-delay="100">
+                    <li>
                         <div class="grp_img"><img src="resource/images/img_card13_1.png" alt=""></div>
                         <p>단말기</p>
                     </li>
-                    <li data-aos="fade-down" data-aos-duration="2000" data-aos-delay="200">
+                    <li>
                         <div class="grp_img"><img src="resource/images/img_card13_2.png" alt=""></div>
                         <p>사용 설명서</p>
                     </li>
-                    <li data-aos="fade-down" data-aos-duration="2000" data-aos-delay="300">
+                    <li>
                         <div class="grp_img"><img src="resource/images/img_card13_3.png" alt=""></div>
                         <p>파우치</p>
                     </li>
-                    <li data-aos="fade-down" data-aos-duration="2000" data-aos-delay="400">
+                    <li>
                         <div class="grp_img"><img src="resource/images/img_card13_4.png" alt=""></div>
                         <p>충전기,케이블</p>
                     </li>
-                    <li data-aos="fade-down" data-aos-duration="2000" data-aos-delay="500">
+                    <li>
                         <div class="grp_img"><img src="resource/images/img_card13_5.png" alt=""></div>
                         <p>용지</p>
                     </li>
