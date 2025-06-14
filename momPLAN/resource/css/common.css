@@ -16,6 +16,25 @@ header + main > *:first-child{margin-top: 15px;}
 
 main{padding: 0 20px 40px;}
 
+nav{height: 97px;}
+nav ul{position: fixed;bottom: 0;left:0;right:0;display: flex;align-items: center;box-sizing: border-box;padding: 0 10px 34px;background: #fff;border-radius: 10px 10px 0 0;box-shadow: 0px -1px 10px rgba(0, 0, 0, 0.08)}
+nav ul li{flex:1;text-align: center;}
+nav ul li a{display: flex;flex-direction: column;align-items: center;justify-content: center;gap:2px;height: 63px;font-size: 12px;font-weight: 600;color:#AEB3BE;transition: color 0.2s;}
+nav ul li a::before{content: '';display: block;width: 25px;height: 25px;background: url(../images/ico_nav01.svg) no-repeat center;}
+nav ul li:nth-child(2) a::before{background: url(../images/ico_nav02.svg) no-repeat center;}
+nav ul li:nth-child(3) a::before{background: url(../images/ico_nav03.svg) no-repeat center;}
+nav ul li:nth-child(4) a::before{background: url(../images/ico_nav04.svg) no-repeat center;}
+nav ul li:nth-child(5) a::before{background: url(../images/ico_nav05.svg) no-repeat center;}
+nav ul li.on a,
+nav ul li a:hover{color:#444444;font-weight: 700;}
+nav ul li.on:nth-child(1) a::before{background: url(../images/ico_nav01_on.svg) no-repeat center;}
+nav ul li.on:nth-child(2) a::before{background: url(../images/ico_nav02_on.svg) no-repeat center;}
+nav ul li.on:nth-child(3) a::before{background: url(../images/ico_nav03_on.svg) no-repeat center;}
+nav ul li.on:nth-child(4) a::before{background: url(../images/ico_nav04_on.svg) no-repeat center;}
+nav ul li.on:nth-child(5) a::before{background: url(../images/ico_nav05_on.svg) no-repeat center;}
+
+
+
 .titbox{display: flex;align-items: center;margin-top: 40px;}
 .titbox .tit{font-size: 20px;font-weight: 800;line-height: 24px;color:#302F3E}
 .titbox .tit .pt{color:#FF7EB0}
