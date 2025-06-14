@@ -30,7 +30,7 @@
         </header>
         <main>
             <div class="titbox type1">
-                <p class="tit"><span class="name">홍길동</span>님, 반가워요!</p>
+                <p class="tit fw_m"><span class="name">홍길동</span>님, 반가워요!</p>
                 <div class="right">
                     <div class="name_badge planer">플래너</div>
                     <div class="name_badge user" style="display: none;">m회원</div>
@@ -90,25 +90,25 @@
                     </li>
                 </ul>
                 <div class="main_banner-pagination"></div>
+                <!-- Initialize Swiper -->
+                <script>
+                    var swiper = new Swiper(".main_banner", {
+                        slidesPerView: "auto",
+                        autoplay: {
+                            delay: 5000,
+                        },
+                        spaceBetween: 16,
+                        grabCursor: true,
+                        pagination: {
+                            el: ".main_banner-pagination",
+                            clickable: true,
+                            type: 'bullets'
+                        }
+                    });
+                </script>
             </div>
-            <!-- Initialize Swiper -->
-            <script>
-                var swiper = new Swiper(".main_banner", {
-                    slidesPerView: "auto",
-                    autoplay: {
-                        delay: 5000,
-                    },
-                    spaceBetween: 16,
-                    grabCursor: true,
-                    pagination: {
-                        el: ".main_banner-pagination",
-                        clickable: true,
-                        type: 'bullets'
-                    }
-                });
-            </script>
             <div class="titbox">
-                <p class="tit">꼭 필요한 보험</p>
+                <p class="tit fw_exb">꼭 필요한 보험</p>
             </div>
             <ul class="main_list">
                 <li>
@@ -150,7 +150,7 @@
                 </li>
             </ul>
             <div class="titbox">
-                <p class="tit">또 하나의 가족 <span class="pt">펫보험</span></p>
+                <p class="tit fw_exb">또 하나의 가족 <span class="pt">펫보험</span></p>
             </div>
             <ul class="main_list">
                 <li>

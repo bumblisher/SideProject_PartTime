@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="date=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="format-detection" content="email=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="resource/css/reset.css">
+    <link rel="stylesheet" href="resource/css/common.css">
+    <script src="resource/js/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="resource/js/main.js"></script>
+    <title>momplan</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header sub">
+            <div class="header_inner">
+                <a href="#" id="" class="btn_back"></a>
+                <h2>꼭 필요한 보험</h2>
+                <div class="right"></div>
+            </div>
+        </header>
+        <main>
+            <div class="swiper sub_tab">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide on">
+                        <a href="#">법률보험</a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="#">자녀보험</a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="#">부모님 건강보험</a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="#">실손보험</a>
+                    </li>
+                </ul>
+                <div class="main_banner-pagination"></div>
+                <!-- Initialize Swiper -->
+                <script>
+                    var swiper = new Swiper(".sub_tab", {
+                        slidesPerView: "auto",
+                    });
+                </script>
+            </div>
+            <div class="titbox">
+                <p class="tit">법률서비스 보험이란?</p>
+            </div>
+            <p class="txt gray400">자녀를 키우는 엄마라면 꼭 필요한 보험<br>
+                학교 폭력등 분쟁 발생 시 변호사 선임비 지원 아이의
+                일상 중 사고/분쟁 발생 시 법률보호</p>
+            <div class="titbox">
+                <p class="tit fz16">맘플랜 지원 서비스</p>
+            </div>
+            <ul class="list_pink">
+                <li>법률 상담 서비스</li>
+                <li>변호사 선임비 지원</li>
+                <li>소송비 및 법적 문서 작성 비용 지원</li>
+                <li>다양한 법적 문제에 대한 전문적 대응 지원</li>
+            </ul>
+            <div class="titbox">
+                <p class="tit fz16">2025 법률 서비스 보험 정리 자료</p>
+            </div>
+            <ul class="list_legal">
+                <li>
+                    <a href="#">법률 서비스 보험 PLAN 안내</a>
+                </li>
+                <li>
+                    <a href="#">다양한 법적 분쟁 &<br>법률 보험의 해결 방법</a>
+                </li>
+                <li>
+                    <a href="#">실제 소송 사례로<br>쉽게 이해하는 법률 보험</a>
+                </li>
+            </ul>
+        </main>
+    </div>
+</body>
+
+</html>
