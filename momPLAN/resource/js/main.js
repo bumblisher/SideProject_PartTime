@@ -15,7 +15,7 @@ $(function () {
 		if ($(this).parent().hasClass("on")) {
 			$(this).next().slideUp(300);
 			$(this).parent().removeClass("on");
-		}else {
+		} else {
 			$(".list_acco li").removeClass("on");
 			$(".list_acco li > div").slideUp(300);
 			$(this).parent().addClass("on");
@@ -23,23 +23,27 @@ $(function () {
 		}
 	});
 
-	// 햄버거 메뉴
-	// $(".btn_menu").on("click", function () {
-	// 	$(this).toggleClass("on");
-	// 	$("html,body").toggleClass("menu_on");
-	// });
+	// 모든 .tabbox에 대해 탭 동작 적용
+	document.querySelectorAll('.tabbox').forEach(function (tabbox) {
+		const tabButtons = tabbox.querySelectorAll('.tab_list button');
+		const tabContents = tabbox.querySelectorAll('.tab_cont > div');
 
-	// 탭
-	$(".tabbox button").on("click", function () {
-		$(".tabbox button").removeClass("on");
-		$(this).addClass("on");
-		if ($(this).index() == 0) {
-			$(this).parent().next().children("div").hide();
-			$(this).parent().next().children("div:nth-child(1)").show();
-		} else if ($(this).index() == 1) {
-			$(this).parent().next().children("div").hide();
-			$(this).parent().next().children("div:nth-child(2)").show();
-		}
+		tabButtons.forEach(function (btn, idx) {
+			btn.addEventListener('click', function () {
+				// 모든 버튼에서 'on' 클래스 제거
+				tabButtons.forEach(b => b.classList.remove('on'));
+				// 클릭한 버튼에만 'on' 클래스 추가
+				btn.classList.add('on');
+
+				// 모든 컨텐츠 숨김
+				tabContents.forEach(c => c.style.display = 'none');
+				// 해당 인덱스 컨텐츠만 표시
+				tabContents[idx].style.display = 'block';
+			});
+		});
+
+		// 초기화: 첫 번째 탭만 표시
+		tabContents.forEach((c, i) => c.style.display = i === 0 ? 'block' : 'none');
 	});
 
 });
