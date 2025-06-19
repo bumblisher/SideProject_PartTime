@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="date=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="format-detection" content="email=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="resource/css/reset.css">
+    <link rel="stylesheet" href="resource/css/common.css">
+    <script src="resource/js/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="resource/js/main.js"></script>
+    <title>momplan</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header sub">
+            <div class="header_inner">
+                <a href="#" class="btn_back"></a>
+                <div class="right"></div>
+            </div>
+        </header>
+        <main>
+            <p class="join_tit">휴대폰 번호 인증</p>
+            <p class="join_txt">휴대폰번호는 ID로 적용됩니다<br>
+                본인명의 휴대폰번호를 입력해 주세요</p>
+            <div class="formbox type2">
+                <div class="grp_form">
+                    <p class="tit">이름</p>
+                    <div class="cont">
+                        <input type="text" placeholder="이름을 입력해 주세요">
+                        <p class="txt_err">성함이 일치하지 않습니다.</p>
+                    </div>
+                </div>
+                <div class="grp_form">
+                    <p class="tit">휴대폰 번호</p>
+                    <div class="cont">
+                        <input type="text" placeholder="-없이 숫자만 입력하세요">
+                        <p class="txt_err">잘못된 형식의 번호입니다.</p>
+                    </div>
+                </div>
+                <div class="grp_form">
+                    <div class="cont">
+                        <div class="grp_check">
+                            <input type="checkbox" name="check01" id="check01">
+                            <label for="check01">개인정보 수집·이용 동의</label>
+                            <a href="#">자세히보기</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn_form">인증 메시지 보내기</button>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
