@@ -245,6 +245,32 @@ p.txt.gray04{color:#535E68}
 .tabbox.type2 .tab_list button{flex:none;padding:8px 6px;height: 36px;border-radius: 10px;font-size: 13px;font-weight: 600;color:#868E96}
 .tabbox.type2 .tab_list button.on{color:#fff;background:#302F3E;}
 
+.tabbox.dogcat {margin-top: 16px;}
+.tabbox.dogcat .tab_list{display:flex;border-radius: 0px;overflow: hidden;background:#fff;}
+.tabbox.dogcat .tab_list button{flex:1;display:inline-flex;align-items: center;gap:6px;justify-content: center;height: 42px;color:#A9B0B8;font-size: 16px;font-weight: 600;border-bottom:1px solid #DAE1E8;background: none;}
+.tabbox.dogcat .tab_list button.on{color:#535E68;font-weight: 700;border-color:#535E68;border-radius: 0;}
+
+.sw_dog,
+.sw_cat{margin-top: 16px;}
+.sw_dog li,
+.sw_cat li{width: 294px;height: 268px;background: #F1F3F5;border-radius: 10px;padding:20px 16px;box-sizing: border-box;}
+.sw_dog .top,
+.sw_cat .top{display: flex;gap:16px;align-items: center;font-size: 16px;font-weight: 700;line-height: 130%;color:#302F3E;padding-bottom: 12px;border-bottom: 1px solid #DAE1E8;}
+.sw_dog .top .grp_img,
+.sw_cat .top .grp_img{border:1px solid #FF7EB0;width: 52px;height: 52px;border-radius: 50%;flex:none;display: inline-flex;align-items: center;justify-content: center;background: #fff;}
+.sw_dog .tit,
+.sw_cat .tit{font-size: 16px;font-weight: 700;line-height: 130%;color:#535E68;margin-top: 12px;}
+.sw_dog .txt,
+.sw_cat .txt{font-size: 15px;font-weight: 400;line-height: 130%;color:#535E68;margin-top: 6px;}
+.sw_dog .txt + .tit,
+.sw_cat .txt + .tit{margin-top: 22px;}
+.sw_dog-pagination,
+.sw_cat-pagination{text-align: center;}
+.sw_dog-pagination .swiper-pagination-bullet,
+.sw_cat-pagination .swiper-pagination-bullet{width: 8px;height: 3px;;border-radius: 2px;background: #D2D9DF;opacity: 1;}
+.sw_dog-pagination .swiper-pagination-bullet-active,
+.sw_cat-pagination .swiper-pagination-bullet-active{width: 14px;background: #FF7EB0;}
+
 .tbl{width: 100%;border-collapse: collapse;margin-top: 16px;}
 .tbl th,
 .tbl td{border:1px solid #788FAF;height: 32px;vertical-align: middle;text-align: center;padding:3px;line-height: 130%;}
@@ -345,6 +371,10 @@ p.txt.gray04{color:#535E68}
 .list_txt li{list-style-type: disc;margin-left: 24px;color:#535E68;font-size: 16px;line-height: 130%;}
 .titbox .list_txt{margin-top: 4px;}
 
+.list_round{margin-top: 16px;}
+.list_round li{border-radius: 18px;padding: 8px 12px;background: #DBE9FD;font-size: 14px;font-weight: 600;color:#377DE0;line-height: 130%;}
+.list_round li + li{margin-top: 10px;}
+.list_round.bg2 li{background: #E4FDD8;color:#15840B}
 
 @media (max-width: 1000px) {
     .pc_wrap .pc_form{display: none;}
