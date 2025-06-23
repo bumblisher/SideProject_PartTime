@@ -359,6 +359,7 @@ p.txt.gray05{color:#495057}
 .listbox li:nth-child(5) .grp_guide{background: #EEF6E6;}
 .listbox li:nth-child(6) .grp_guide{background: #ECECFB;}
 
+.sw_ex{margin-top: 32px;}
 .sw_ex li{width: auto;}
 
 .grp_tip{display: flex;align-items: center;gap: 25px;margin-top: 32px;}
