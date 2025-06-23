@@ -416,8 +416,6 @@ p.txt.gray05{color:#495057}
 .popup.on ~ .dim { display: flex;flex-direction: column;} 
 
 
-
-
 @media (max-width: 1000px) {
     .pc_wrap .pc_form{display: none;}
     .pc_wrap .wrap{width: 100%;max-width: 500px;}
