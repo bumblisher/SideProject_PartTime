@@ -71,7 +71,7 @@ nav ul li.on:nth-child(5) a::before{background: url(../images/ico_nav05_on.svg) 
 .grp_form + .grp_form{margin-top: 24px;}
 .grp_form > .tit{font-weight: 500;font-size: 16px;line-height: 100%;color: #302F3E;margin-bottom: 8px;}
 .grp_form > .cont input,
-.grp_form > .cont select{width: 100%;background:#F1F3F5;border-radius:8px;padding:0 12px;font-size: 14px;height: 59px;box-sizing: border-box;border:1px solid #F1F3F5;transition: all 0.3s;}
+.grp_form > .cont select{width: 100%;background:#F1F3F5;border-radius:8px;padding:0 12px;font-size: 14px;height: 59px;box-sizing: border-box;border:1px solid #F1F3F5;transition: all 0.3s;color:#212529}
 .grp_form > .cont select{appearance: none;background: #F1F3F5 url(../images/ico_select.svg) no-repeat center right 12px;}
 .grp_form > .cont input::placeholder{color:#868E96}
 .grp_form > .cont input.invalid{background-color: #fff;border-color: #ED2227;}
@@ -239,7 +239,7 @@ p.txt.gray05{color:#495057}
 
 .tabbox {margin-top: 16px;}
 .tabbox .tab_list{display:flex;background: #F1F3F5;border-radius: 10px;overflow: hidden;}
-.tabbox .tab_list button{flex:1;display:inline-flex;align-items: center;justify-content: center;height: 45px;color:#495057;font-size: 15px;font-weight: 500;}
+.tabbox .tab_list button{flex:1;display:inline-flex;align-items: center;justify-content: center;height: 45px;color:#495057;font-size: 15px;font-weight: 500;background: #F1F3F5;}
 .tabbox .tab_list button.on{color:#fff;font-weight: 700;background:#FF7EB0;border-radius: 10px;}
 
 .tabbox.type2{margin-top: 20px;}
@@ -323,7 +323,7 @@ p.txt.gray05{color:#495057}
 .list_acco .grp_cont p{line-height: 130%;color:#212529}
 .list_acco .grp_cont .tit{font-size: 16px;font-weight: 700;}
 .list_acco .grp_cont .tit:first-child{margin-top: 0;}
-.list_acco .grp_cont .txt{font-size: 15px;margin-top: 6px;}
+.list_acco .grp_cont .txt{font-size: 15px;margin-top: 8px;}
 .list_acco .grp_cont .txt:first-child{margin-top: 0;}
 .list_acco .grp_cont .txt.pt{font-weight: 700;color:#2379F8}
 .list_acco .grp_cont .txt.sub{font-size: 12px;color:#595959}
@@ -350,7 +350,7 @@ p.txt.gray05{color:#495057}
 .listbox li + li{border-top: 1px solid #DAE1E8;}
 .listbox li .tit{font-size: 16px;font-weight: 500;line-height: 130%;color:#302F3E}
 .listbox li .txt{margin-top: 5px;font-size: 14px;font-weight: 400;line-height: 130%;color:#535E68}
-.listbox li .grp_guide{display: flex;align-items: center;margin-top: 12px;gap:8px;padding: 10px 12px;border-radius: 10px;color:#535E68;font-size: 14px;font-weight: 500;line-height: 130%;}
+.listbox li .grp_guide{flex:none;display: flex;align-items: center;margin-top: 12px;gap:8px;padding: 10px 12px;border-radius: 10px;color:#535E68;font-size: 14px;font-weight: 500;line-height: 130%;}
 .listbox li .grp_guide::before{content:'GUIDE';display: inline-flex;align-items: center;justify-content: center;width: 48px;height: 48px;background: #fff;border-radius: 50%;color:#FF70A7;font-size: 14px;font-weight: 700;line-height: 130%;}
 .listbox li:nth-child(1) .grp_guide{background: #FFEAEF;}
 .listbox li:nth-child(2) .grp_guide{background: #E8EFFF;}
@@ -410,7 +410,7 @@ p.txt.gray05{color:#495057}
 .popup .pop_cont p.txt{font-size: 15px;font-weight: 700;line-height: 130%;color:#212529}
 .popup .pop_cont p.txt_sub{font-size: 13px;font-weight: 600;line-height: 140%;color:#495057;margin-top: 5px;}
 .popup .pop_footer { height: 55px; padding:0; box-sizing: border-box; display: flex; align-items: center;justify-content: center;flex:none} 
-.popup .pop_footer > button {flex:1;height: 55px;border-radius: 0;font-size: 15px;font-weight: 600;background: #DEE2E6;}
+.popup .pop_footer > button {flex:1;height: 55px;border-radius: 0;font-size: 15px;font-weight: 600;background: #DEE2E6;color:#212529}
 .popup .pop_footer > .btn_cm.pt{background-color: #FF7EB0;color:#fff}
 .dim { display: none; position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: 2000; background: rgba(0, 0, 0, 0.5); } 
 .popup.on { display: flex;flex-direction: column;max-height: 88vh;} 
