@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>GitHub 프로젝트 리스트</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <h2>GitHub 프로젝트 목록</h2>
+        <ul id="repo-list"></ul>
+        <script>
+            const username = "bumblisher"; // 예: "octocat"
+            fetch(`https://api.github.com/users/${username}/repos`)
+                .then(response => response.json())
+                .then(data => {
+                    const repoList = document.getElementById("repo-list");
+                    data.forEach(repo => {
+                        const li = document.createElement("li");
+                        const a = document.createElement("a");
+                        a.href = repo.html_url;
+                        a.textContent = repo.name;
+                        a.target = "_blank";
+                        li.appendChild(a);
+                        repoList.appendChild(li);
+                    });
+                });
+        </script>
+
+        <h2>GitHub Pages HTML 폴더별 바로보기</h2>
+        <div id="folders"></div>
+        <script>
+            const owner = "bumblisher";
+            const repo = "SideProject_PartTime";
+            const branch = "main";
+            const rootPath = "";
+
+            // 1. 저장소 루트에서 폴더 목록 불러오기
+            fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${rootPath}?ref=${branch}`)
+                .then(res => res.json())
+                .then(rootFiles => {
+                    // 폴더만 추출
+                    const folders = rootFiles.filter(item => item.type === "dir");
+                    const foldersDiv = document.getElementById("folders");
+
+                    // 2. 각 폴더에 대해 html 파일 목록 조회
+                    folders.forEach(folder => {
+                        fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${folder.path}?ref=${branch}`)
+                            .then(res => res.json())
+                            .then(files => {
+                                const htmlFiles = files.filter(item => item.name.endsWith('.html'));
+                                if (htmlFiles.length > 0) {
+                                    // ===[ div로 전체 묶음 ]===
+                                    const folderDiv = document.createElement("div");
+                                    folderDiv.className = "folder-section";
+
+                                    const h3 = document.createElement("h3");
+                                    h3.textContent = folder.name;
+                                    folderDiv.appendChild(h3);
+
+                                    const ul = document.createElement("ul");
+                                    htmlFiles.forEach(file => {
+                                        const fileUrl = `https://${owner}.github.io/${repo}/${folder.name}/${file.name}`;
+                                        const li = document.createElement("li");
+                                        const a = document.createElement("a");
+                                        a.href = fileUrl;
+                                        a.textContent = file.name;
+                                        a.target = "_blank";
+                                        li.appendChild(a);
+                                        ul.appendChild(li);
+                                    });
+                                    folderDiv.appendChild(ul);
+                                    foldersDiv.appendChild(folderDiv);
+                                    // ===[ /div ]===
+                                }
+                            });
+                    });
+                });
+        </script>
+    </div>
+</body>
+
+</html>
