@@ -23,8 +23,11 @@ main{display: flex;flex:1;flex-direction: column;padding: 20px;}
 main > *{flex:none;}
 
 .grp_bot{flex:none;margin-top: auto;}
-.btn_bot{width: 100%;height: 50px;border-radius: 9px;background: #00AAFF;color:#fff;color:#F2F6FA;font-size: 20px;font-weight: 700;}
-.btn_bot:disabled{background: #CDD8E3;}
+.grp_bot .btn_bot{width: 100%;height: 50px;border-radius: 9px;background: #00AAFF;color:#fff;color:#F2F6FA;font-size: 20px;font-weight: 700;}
+.grp_bot .btn_bot:disabled{background: #CDD8E3;}
+.grp_bot .sub_txt{text-align: center;font-size: 18px;font-weight: 500;color:#86919C}
+.grp_bot .sub_txt a{color:#86919C;font-size: 18px;font-weight: 500;display: inline-block;margin-left: 4px;text-decoration: underline;}
+.grp_bot .btn_bot + .sub_txt{margin-top: 20px;margin-bottom: 20px;}
 
 nav{height: 97px;}
 nav ul{display: flex;align-items: center;position: fixed;right:0;bottom: 0;left:0;z-index: 100;padding: 0 10px 34px;border-radius: 10px 10px 0 0;background: #fff;box-sizing: border-box;box-shadow: 0px -1px 10px rgba(0, 0, 0, 0.08);}
@@ -78,6 +81,11 @@ nav ul li.on:nth-child(5) a::before{background: url(../images/ico_nav05_on.svg) 
 .formbox .titbox + .grp_form{margin-top: 36px;} */
 /* .join_txt{margin-top: 8px;color:#302F3E;font-size: 18px;line-height: 140%;} */
 
+.img_loginbox{text-align: center;}
+.img_loginbox .tit{margin-top: 16px;font-size: 22px;font-weight: 700;color:#302F3E}
+.img_loginbox .tit_sub{margin-top: 12px;font-size: 18px;color:#535E68}
+.img_loginbox .txt{margin-top: 41px;font-size: 20px;font-weight: 700;color:#535E68}
+
 .formbox{margin-top: 30px;}
 .img_join{text-align: center;}
 .join_tit{margin-top: 15px;color: #302F3E;font-size: 24px;font-weight: 700;line-height: 140%;}
@@ -98,10 +106,10 @@ nav ul li.on:nth-child(5) a::before{background: url(../images/ico_nav05_on.svg) 
 .grp_check { display: flex; align-items: center;position: relative;}
 .grp_check input[type="checkbox"] { position: absolute;top:1px;left:1px;width: 0px;height: 0px;} 
 .grp_check label { display:inline-flex; align-items: center; position: relative; padding-left: 42px; color:#302F3E; font-size: 18px; font-weight: 700; line-height: 32px; cursor: pointer;} 
-.grp_check label:before { content:''; display: inline-block; flex:none;position: absolute;left:0; width:32px; height: 32px;margin-right: 10px;border:1px solid #DEE2E6; border-radius:5px; background: #fff; box-sizing: border-box;transition: all 0.3s;}
+.grp_check label:before { content:''; display: inline-block; flex:none;position: absolute;left:0; width:32px; height: 32px;margin-right: 10px;border:2px solid #DEE2E6; border-radius:5px; background: #fff; box-sizing: border-box;transition: all 0.3s;}
 .grp_check label:after { content: ''; position: absolute; top: 8px; left: 8px; width: 14px; height: 7px; border: 2px solid #DEE2E6; transform: rotate(-45deg); border-width: 0 0 3px 3px; } 
 .grp_check input:focus{outline: none;}
-.grp_check input[type="checkbox"]:checked + label:before { background: #FF7EB0;}
+.grp_check input[type="checkbox"]:checked + label:before { background: #00AAFF;border-color: #00AAFF;}
 .grp_check input[type="checkbox"]:checked + label:after{border-color: #fff;}
 .grp_check > a{margin-left: 10px;color: #AEB3BE;font-size: 16px;font-weight: 500;line-height: 32px;text-decoration-line: underline;}
 .grp_check + .grp_check{margin-top: 12px;}
