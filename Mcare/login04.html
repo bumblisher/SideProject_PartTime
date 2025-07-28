@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="date=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="format-detection" content="email=no">
+    <link rel="stylesheet" href="resource/css/reset.css">
+    <link rel="stylesheet" href="resource/css/common.css">
+    <script src="resource/js/jquery-3.4.1.min.js"></script>
+    <script src="resource/js/main.js"></script>
+    <title>Mcare</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header sub">
+            <div class="header_inner">
+                <div class="left"></div>
+                <h2>회원 인증</h2>
+                <div class="right">
+                    <button class="btn_close"></button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="formbox">
+                <div class="grp_form">
+                    <p class="tit">회원 인증번호</p>
+                    <div class="cont">
+                        <input type="text" placeholder="카카오톡으로 받은 인증번호를 입력해주세요" value="565466">
+                        <p class="txt_err">발송된 인증번호를 확인해 주세요.</p>
+                    </div>
+                </div>
+                <div class="grp_form">
+                    <p class="tit">휴대폰 인증번호</p>
+                    <div class="cont">
+                        <input type="text" placeholder="문자로 받은 인증번호 4자리를 입력해주세요">
+                        <p class="txt_err">문자로 발송된 인증번호를 확인해 주세요.</p>
+                        <button class="btn_form">인증 메시지 재전송 03:59</button>
+                    </div>
+                </div>
+            </div>
+            <div class="grp_bot">
+                <button class="btn_bot" disabled>회원 가입하기</button>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
