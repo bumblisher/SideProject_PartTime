@@ -145,7 +145,7 @@ nav ul li.on:nth-child(5) a::before{background: url(../images/ico_nav05_on.svg) 
 .titbox:first-child{margin-top: 0;}
 .titbox.verti{flex-direction: column;align-items: flex-start;gap:10px;}
 .titbox .tit{color:#302F3E;font-size: 24px;font-weight: 700;line-height: 24px;}
-.titbox .tit .pt{color:#FF7EB0;}
+.titbox .tit .pt{color:#00A7FC;}
 .titbox .right{display: flex;align-items: center;margin-left: auto;}
 .titbox .right .btn_tit{padding: 0 12px;height: 36px;border-radius: 10px;background: #302F3E;color:#fff;font-size: 16px;font-weight: 700;}
 .titbox .tit.fw_m{font-weight: 500;}
@@ -197,7 +197,7 @@ p.txt.gray05{color:#495057;}
 .home .main_banner + .titbox .tit{font-size: 20px;}
 .home .main_banner + .titbox .name{font-size: 24px;font-weight: 800;}
 
-.bgbox_full{background: #F2F6FA;margin: 24px -20px 0;padding:24px 20px}
+.bgbox_full{background: #F2F6FA;margin: 24px -20px 0;padding:28px 20px}
 
 .main_banner{margin: 0 -20px 0;}
 .main_banner .swiper-slide a{display: block;position: relative;height: 290px;padding: 124px 0 10px 20px;background:#1092EF;box-sizing: border-box;}
@@ -221,12 +221,12 @@ p.txt.gray05{color:#495057;}
 .main_img > a:nth-child(1) p span{display: block;margin-top: 6px;font-size: 16px;color:#DAE1E8;font-weight: 400;}
 .main_img > a:nth-child(2){background: #B2EEA0}
 
-.main_list {margin-top: 6px;background: #fff;padding: 30px 16px;border-radius: 16px;}
+.main_list {margin-top: 12px;background: #fff;padding: 30px 16px;border-radius: 16px;}
 .main_list > li + li {border-top: 1px solid #DAE1E8;margin-top: 24px;padding-top: 24px;}
 .main_list > li a{display: flex;align-items: center;box-sizing: border-box;}
 .main_list > li a .cont{flex:1;}
 .main_list > li a .cont .tit{margin-bottom: 6px;color:#302F3E;font-size: 20px;font-weight: 400;}
-.main_list > li a .cont .txt{color:rgba(0, 0, 0, 0.64);font-size: 18px;font-weight: 500;line-height: 1;}
+.main_list > li a .cont .txt{color:rgba(0, 0, 0, 0.64);font-size: 18px;font-weight: 500;line-height: 1.1;}
 .main_list > li a .img{display: inline-flex;flex:none;align-items: center;justify-content: center;width: 60px;height: 60px;border-radius: 10px;background:#E8F0F9;}
 
 .main_link{display: block;margin-top: 20px;padding:20px;border-radius: 10px;background: #EEF2F6 url('../images/img_main_link.svg') no-repeat center right;}
