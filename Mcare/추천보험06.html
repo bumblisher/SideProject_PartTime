@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="date=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="format-detection" content="email=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="resource/css/reset.css">
+    <link rel="stylesheet" href="resource/css/common.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="resource/js/jquery-3.4.1.min.js"></script>
+    <script src="resource/js/main.js"></script>
+    <title>Mcare</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header sub tab">
+            <div class="header_inner">
+                <div class="left">
+                    <button class="btn_back"></button>
+                </div>
+                <h2>추천 보험</h2>
+                <div class="right">
+                </div>
+            </div>
+        </header>
+        <div class="swiper tabmenu">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                    <a href="#">실손보험</a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="#">법률보험</a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="#">유병자보험</a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="#">태아보험</a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="#">자녀보험</a>
+                </li>
+                <li class="swiper-slide on">
+                    <a href="#">펫보험</a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="#">펫 양육자금</a>
+                </li>
+            </ul>
+            <div class="main_banner-pagination"></div>
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper(".tabmenu", {
+                    slidesPerView: "auto",
+                    initialSlide: "5",
+                });
+            </script>
+        </div>
+        <main>
+            <div class="topbox">
+                <p class="tit">펫보험이란?</p>
+                <p class="txt">사람의 실손의료보험처럼 반려동물 병원비를 돌려받는 보험입니다. 품종마다 잘 걸리는 질병이 다르므로, 우리 아이 품종에 맞는 보험 선택 포인트를 꼭 확인해보세요.
+                </p>
+            </div>
+            <a class="grp_banner3" href="#">
+                <p class="txt_event">EVENT</p>
+                <p class="txt">보험가입시 최대 3만원<br>
+                    쿠팡 상품권 지급</b>
+                </p>
+            </a>
+            <div class="titbox">
+                <p class="tit">펫보험 가입 <span class="pt">꿀팁 10가지</span>
+                </p>
+            </div>
+            <ul class="list_acco">
+                <li>
+                    <button class="acco_tit">
+                        <p>1. 어릴수록 유리해요</p>
+                    </button>
+                    <div class="acco_cont">
+                        <div class="grp_cont">
+                            <p class="txt">
+                                나이가 어릴수록 보험료가 저렴하고 가입도 쉽습니다. 8세 이상은 가입이 어렵거나 보험료가 비쌉니다.<br>
+                                추천 가입 시기: 생후 90일~5세 이전
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <button class="acco_tit">
+                        <p>2. 어떤 병까지 보장하는지 확인</p>
+                    </button>
+                    <div class="acco_cont">
+                        <div class="grp_cont">
+                            <p class="txt">
+                                보험마다 보장하는 병이 다릅니다.<br>
+                                중성화 수술, 슬개골 탈구, 피부병, 치과 질환 등 자주 발생하는 병의 보장 여부를 꼭 확인하세요.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <button class="acco_tit">
+                        <p>3. 슬개골 탈구 보장은 꼭 확인!</p>
+                    </button>
+                    <div class="acco_cont">
+                        <div class="grp_cont">
+                            <p class="txt">
+                                소형견(말티즈, 푸들, 포메 등)에 흔한 질병인데, 일부 보험에서는 보장을 안 합니다. 반드시 확인하시고 특약이 있다면 추가를 추천합니다.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <button class="acco_tit">
+                        <p>4. 자기부담금(본인 부담률) 비교</p>
+                    </button>
+                    <div class="acco_cont">
+                        <div class="grp_cont">
+                            <p class="txt">
+                                일반적으로 병원비의 30%~50%는 본인이 내야합니다.<br>
+                                부담금이 적을수록 좋지만 보험료가 올라가기 때문에 상황에 맞게 조절이 필요합니다.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <button class="acco_tit">
+                        <p>5. 보험금 청구가 쉬운 곳을 선택</p>
+                    </button>
+                    <div class="acco_cont">
+                        <div class="grp_cont">
+                            <p class="txt">
+                                앱 청구, 사진 촬영만으로 보험금 청구가 가능한 보험이 편리합니다. 복잡한 서류를 요구하는 곳은 피하세요.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <button class="acco_tit">
+                        <p>6. 이미 아픈 곳은 보장이 안돼요</p>
+                    </button>
+                    <div class="acco_cont">
+                        <div class="grp_cont">
+                            <p class="txt">
+                                가입 전 진단받은 질병(슬개골, 피부병 등)은 대부분 보장받을 수 없습니다. 건강할 때 미리 가입하세요.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <button class="acco_tit">
+                        <p>7. 가입 후 바로 보장되지 않아요.</p>
+                    </button>
+                    <div class="acco_cont">
+                        <div class="grp_cont">
+                            <p class="txt">
+                                가입 직후 바로 보장이 안 되는 경우 많아요. 대기기간 이후 보장을 받을 수 있습니다.<br>
+                                일반 질병: 대기기간 30일<br>
+                                특정 질병/상해: 대기기간 60~90일
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <button class="acco_tit">
+                        <p>8. 동물 등록증을 준비하세요.</p>
+                    </button>
+                    <div class="acco_cont">
+                        <div class="grp_cont">
+                            <p class="txt">
+                                대부분의 보험은 동물등록번호가 있어야 가입 가능합니다.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <button class="acco_tit">
+                        <p>9. 보험사 비교는 필수</p>
+                    </button>
+                    <div class="acco_cont">
+                        <div class="grp_cont">
+                            <p class="txt">
+                                삼성화재, 현대해상, KB손해보험, 메리츠화재 등 다양한 보험사에서 펫보험을 운영합니다. 보장 내용, 보험료를 비교해서 내 반려동물과 꼭 맞는 상품을
+                                선택하세요.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <button class="acco_tit">
+                        <p>10. 갱신기간과 보장되는 나이 확인</p>
+                    </button>
+                    <div class="acco_cont">
+                        <div class="grp_cont">
+                            <p class="txt">
+                                대부분 1년 단위 갱신합니다.<br>
+                                최대 보장 연령(만 10세 또는 만 13세 등) 확인 후 장기적으로 유지 가능한지 확인하세요.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="bar"></div>
+            <div class="titbox">
+                <p class="tit">품종별 보험 선택 팁</p>
+            </div>
+            <div class="notimsg">
+                <p class="tit sch">신청하기 전 꼭 체크하세요</p>
+                <ul>
+                    <li>소형견: 슬개골·치과 보장 필수</li>
+                    <li>대형견: 관절·종양 진단비 특약 추가</li>
+                    <li>고양이: 구강·신장·심장 특화 보험</li>
+                    <li>반복 진료 많음: 실손형 + 자기부담금 낮게</li>
+                    <li>고령견/묘: KB, 메리츠 등 고령 가입 가능한 보험사 활용</li>
+                </ul>
+            </div>
+            <div class="tabbox">
+                <div class="tab_list">
+                    <button class="on">강아지</button>
+                    <button>고양이</button>
+                </div>
+                <div class="tab_cont">
+                    <div>
+                        <div class="swiper sw_dog">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <div class="top">
+                                        <div class="grp_img"><img src="resource/images/img_dog01.png" alt=""></div> 말티즈,
+                                        푸들, 포메라니안,<br>요크셔테리어 (소형견)
+                                    </div>
+                                    <p class="tit">자주 발생하는 질병</p>
+                                    <p class="txt">슬개골 탈구, 치주염, 피부병</p>
+                                    <p class="tit">보험 선택 포인트</p>
+                                    <p class="txt">✅ 슬개골 탈구 보장 여부 반드시 확인<br> ✅ 구강질환(치아) 보장 특약 추가<br> ✅ 반복진료 대비 실손형 보험
+                                    </p>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="top">
+                                        <div class="grp_img"><img src="resource/images/img_dog02.png" alt=""></div> 시츄,
+                                        비숑프리제
+                                    </div>
+                                    <p class="tit">자주 발생하는 질병</p>
+                                    <p class="txt">눈물 자국, 알레르기성 피부염, 귀 질환</p>
+                                    <p class="tit">보험 선택 포인트</p>
+                                    <p class="txt">✅ 피부병 및 귀염증 보장 포함<br> ✅ 알레르기 관련 질환 진단비 포함</p>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="top">
+                                        <div class="grp_img"><img src="resource/images/img_dog03.png" alt=""></div>
+                                        웰시코기, 닥스훈트
+                                    </div>
+                                    <p class="tit">자주 발생하는 질병</p>
+                                    <p class="txt">허리디스크, 척추질환</p>
+                                    <p class="tit">보험 선택 포인트</p>
+                                    <p class="txt">✅ 디스크/척추질환 보장 포함<br> ✅ 입원 및 수술 보장 확인</p>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="top">
+                                        <div class="grp_img"><img src="resource/images/img_dog04.png" alt=""></div>
+                                        리트리버, 골든리트리버,<br>래브라도 (중대형견)
+                                    </div>
+                                    <p class="tit">자주 발생하는 질병</p>
+                                    <p class="txt">고관절 이형성증, 종양, 관절염</p>
+                                    <p class="tit">보험 선택 포인트</p>
+                                    <p class="txt">✅ 고관절/관절질환 보장<br> ✅ 종양/암 관련 진단비 특약 추가</p>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="top">
+                                        <div class="grp_img"><img src="resource/images/img_dog05.png" alt=""></div> 시베리안
+                                        허스키,<br>알래스칸 말라뮤트
+                                    </div>
+                                    <p class="tit">자주 발생하는 질병</p>
+                                    <p class="txt">피부병, 안구 질환, 고지방증</p>
+                                    <p class="tit">보험 선택 포인트</p>
+                                    <p class="txt">✅ 피부병, 안과 질환 포함<br> ✅ 혈액검사/정기검진 특약 고려</p>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="top">
+                                        <div class="grp_img"><img src="resource/images/img_dog01.png" alt=""></div>
+                                        프렌치불독, 퍼그,<br>시추 (단두종)
+                                    </div>
+                                    <p class="tit">자주 발생하는 질병</p>
+                                    <p class="txt">호흡기 질환, 피부 접힘 염증</p>
+                                    <p class="tit">보험 선택 포인트</p>
+                                    <p class="txt">✅ 호흡기 질환 특화 보장 포함<br> ✅ 고온 스트레스 대비 응급실 보장 포함</p>
+                                </li>
+                            </ul>
+                            <div class="sw_dog-pagination"></div>
+                            <!-- Initialize Swiper -->
+                            <script>
+                                var swiper = new Swiper(".sw_dog", {
+                                    slidesPerView: "auto",
+                                    spaceBetween: 16,
+                                    grabCursor: true,
+                                    pagination: {
+                                        el: ".sw_dog-pagination",
+                                        clickable: true,
+                                        type: 'bullets'
+                                    }
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="swiper sw_cat">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <div class="top">
+                                        <div class="grp_img"><img src="resource/images/img_cat01.png" alt=""></div> 스코티시
+                                        폴드
+                                    </div>
+                                    <p class="tit">자주 발생하는 질병</p>
+                                    <p class="txt">관절염, 심장병 (심근증)</p>
+                                    <p class="tit">보험 선택 포인트</p>
+                                    <p class="txt">✅ 관절 및 심장 질환 보장 특약 포함<br> ✅ 반복진료 보장형 실손 보험</p>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="top">
+                                        <div class="grp_img"><img src="resource/images/img_cat02.png" alt=""></div>
+                                        페르시안, 히말라얀
+                                    </div>
+                                    <p class="tit">자주 발생하는 질병</p>
+                                    <p class="txt">신장 질환, 눈물 자국, 감기</p>
+                                    <p class="tit">보험 선택 포인트</p>
+                                    <p class="txt">✅ 만성신부전 보장 포함<br> ✅ 눈/코/피부 진단 특약 확인</p>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="top">
+                                        <div class="grp_img"><img src="resource/images/img_cat03.png" alt=""></div> 러시안
+                                        블루, 샴, 벵갈
+                                    </div>
+                                    <p class="tit">자주 발생하는 질병</p>
+                                    <p class="txt">치은염, 잇몸병, 구강질환</p>
+                                    <p class="tit">보험 선택 포인트</p>
+                                    <p class="txt">✅ 구강 치료 보장 여부 필수 확인<br> ✅ 수술 및 마취 비용 보장 특약</p>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="top">
+                                        <div class="grp_img"><img src="resource/images/img_cat04.png" alt=""></div>
+                                        노르웨이숲, 메인쿤
+                                    </div>
+                                    <p class="tit">자주 발생하는 질병</p>
+                                    <p class="txt">비만, 당뇨, 심장질환</p>
+                                    <p class="tit">보험 선택 포인트</p>
+                                    <p class="txt">✅ 대사성 질환 보장 포함<br> ✅ 식이요법, 특수처방식 처치 특약 고려</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sw_cat-pagination"></div>
+                        <!-- Initialize Swiper -->
+                        <script>
+                            var swiper = new Swiper(".sw_cat", {
+                                slidesPerView: "auto",
+                                spaceBetween: 16,
+                                grabCursor: true,
+                                pagination: {
+                                    el: ".sw_cat-pagination",
+                                    clickable: true,
+                                    type: 'bullets'
+                                }
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="notimsg">
+                <p class="tit tip">꾸울 TIP</p>
+                <p class="txt">맘플랜에서 전문가와 최소 5개 이상 보험사를 비교 후 가입하세요</p>
+            </div>
+            <div class="grp_bot">
+                <p class="txt">상담 예약 후<br>
+                    M금융 전문 설계사가 연락드립니다.</p>
+                <button class="btn_bot">상담 예약하기</button>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
