@@ -23,6 +23,11 @@ $(function () {
 		}
 	});
 
+	$(".dim").on("click", function () {
+		$(".popup").removeClass("on");
+		
+	});
+
 	// 모든 .tabbox에 대해 탭 동작 적용
 	document.querySelectorAll('.tabbox').forEach(function (tabbox) {
 		const tabButtons = tabbox.querySelectorAll('.tab_list button');
