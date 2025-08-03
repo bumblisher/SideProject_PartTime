@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="date=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="format-detection" content="email=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="resource/css/reset.css">
+    <link rel="stylesheet" href="resource/css/common.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="resource/js/jquery-3.4.1.min.js"></script>
+    <script src="resource/js/main.js"></script>
+    <title>Mcare</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="swiper tabmenu tabonly">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide on">
+                    <a href="#">상담사례</a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="#">MK 손해사정</a>
+                </li>
+            </ul>
+            <div class="main_banner-pagination"></div>
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper(".tabmenu", {
+                    slidesPerView: "auto",
+                });
+            </script>
+        </div>
+        <main>
+            <div class="list_tag">
+                <button class="on">전체</button>
+                <button>보상금 신청</button>
+                <button>기존질환</button>
+                <button>후유장애 평가</button>
+                <button>과실비율</button>
+                <button>면책사유</button>
+                <button>진단서/소견서 해석</button>
+                <button>중복보상 조정</button>
+                <button>합의금 협상</button>
+                <button>약관해석</button>
+                <button>휴업손해</button>
+            </div>
+            <div class="swiper sub_banner">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                        <a href="#">
+                            <p class="tit">손해사정사<br>
+                                마케팅 문구</p>
+                            <p class="txt">MK 손해사정<u>자세히 보기</u></p>
+                            <img src="resource/images/img_sub_banner03.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <!-- Initialize Swiper -->
+                <script>
+                    var swiper = new Swiper(".sub_banner", {
+                        slidesPerView: "1",
+                        spaceBetween: "8",
+                        autoplay: {
+                            delay: 5000,
+                        },
+                        grabCursor: true
+                    });
+                </script>
+            </div>
+            <div class="bar"></div>
+            <ul class="list_board">
+                <li>
+                    <a href="#" class="grp_board">
+                        <div class="grp_question">
+                            <div class="grp_badge">
+                                <span class="badge">암</span>
+                                <span class="badge">진단비</span>
+                            </div>
+                            <p class="tit">암 진단을 받았는데 보험사에서 ‘제자리암이라 일반암 진단비를 못 준다’고 합니다. 정말 못 받나요?</p>
+                        </div>
+                        <div class="grp_answer">
+                            <div class="top">
+                                <div class="grp_badge">
+                                    <span class="badge">답변</span>
+                                </div>
+                                <p class="name">MK 파트너스 김정철 대표손사</p>
+                            </div>
+                            <p class="txt">
+                                보험약관에 따라 암의 범위가 다릅니다. 제자리암(상피내암)은 일부 상품에서 일반암 진단비 지급 대상이 아니고, 별도의 소액 지급 규정을 두기도 합니다. 다만
+                                병리보고서에 ‘침습성’으로 분류되는 경우 일반암으로 인정될 수 있습니다. 진단서와 조직검사 결과를 보내주시면 정확히 검토해 드리겠습니다.
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="grp_board">
+                        <div class="grp_question">
+                            <div class="grp_badge">
+                                <span class="badge">교통사고</span>
+                                <span class="badge">휴업손해</span>
+                            </div>
+                            <p class="tit">교통사고로 한 달 정도 일을 못했는데 보험사에서 휴업손해를 반만 인정한다고 합니다. 왜 그런 거죠?</p>
+                        </div>
+                        <div class="grp_answer">
+                            <div class="top">
+                                <div class="grp_badge">
+                                    <span class="badge">답변</span>
+                                </div>
+                                <p class="name">MK 파트너스 김정철 대표손사</p>
+                            </div>
+                            <p class="txt">
+                                휴업손해는 사고 전 소득자료(급여명세서, 사업소득 증빙 등)를 기준으로 산정합니다. 보험사가 일부만 인정하는 사유는 통원치료 기간이라 휴업 필요성이 없다고
+                                보았거나, 소득자료 부족 때문일 수 있습니다. 입·통원 치료일수와 업무불능 기간이 명확히 구분돼야 하니 진단서와 치료확인서를 다시 제출해 재심사 요청해
+                                보겠습니다.
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="grp_board">
+                        <div class="grp_question">
+                            <div class="grp_badge">
+                                <span class="badge">화재</span>
+                                <span class="badge">보험금</span>
+                            </div>
+                            <p class="tit">집에 화재가 나서 보험금을 청구했는데 ‘고의적 방화 의심’으로 지급 거절 통보를 받았습니다. 어떻게 해야 하나요?</p>
+                        </div>
+                        <div class="grp_answer">
+                            <div class="top">
+                                <div class="grp_badge">
+                                    <span class="badge">답변</span>
+                                </div>
+                                <p class="name">MK 파트너스 김정철 대표손사</p>
+                            </div>
+                            <p class="txt">
+                                보험사는 통상 화재 원인조사 결과, 방화 가능성이 있는 경우 지급을 보류합니다. 소방서 화재조사 보고서와 경찰 수사 결과를 우선 확보해 고의성이 없음을
+                                소명해야 합니다. 화재 현장 사진, 목격자 진술 등 증빙자료를 정리해 소명서를 함께 제출하시길 권합니다.
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="grp_board">
+                        <div class="grp_question">
+                            <div class="grp_badge">
+                                <span class="badge">입원치료</span>
+                                <span class="badge">입원일당</span>
+                            </div>
+                            <p class="tit">낙상으로 입원치료를 받았는데 보험사에서 ‘통원치료’라며 입원일당을 지급하지 않겠다고 합니다.</p>
+                        </div>
+                        <div class="grp_answer">
+                            <div class="top">
+                                <div class="grp_badge">
+                                    <span class="badge">답변</span>
+                                </div>
+                                <p class="name">MK 파트너스 김정철 대표손사</p>
+                            </div>
+                            <p class="txt">
+                                입·통원의 구분은 ‘입원확인서’와 ‘진료기록부’에 근거합니다. 보험사에서 통원치료로 간주하는 경우는 실제 입원이 아닌 ‘낮병동’ 이용 사례가 많습니다.
+                                입·퇴원 일자가 기재된 진단서와 입원비 영수증 원본을 재제출하면 입원 인정 여부를 재검토받을 수 있습니다.
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="grp_board">
+                        <div class="grp_question">
+                            <div class="grp_badge">
+                                <span class="badge">교통사고</span>
+                                <span class="badge">운전자보험</span>
+                            </div>
+                            <p class="tit">교통사고로 형사합의를 봐야 하는데 운전자 보험에서 합의금을 지원해 준다고 들었습니다. 바로 지급되나요?</p>
+                        </div>
+                        <div class="grp_answer">
+                            <div class="top">
+                                <div class="grp_badge">
+                                    <span class="badge">답변</span>
+                                </div>
+                                <p class="name">MK 파트너스 김정철 대표손사</p>
+                            </div>
+                            <p class="txt">
+                                운전자 보험은 ‘교통사고 처리 지원금’ 특약에 가입되어 있어야 하며, 형사합의금은 선지급이 아니라 보상 후 청구 방식입니다. 합의서 원본과 사고사실 확인원,
+                                형사사건 번호 등의 서류가 필요합니다. 서류 준비 절차부터 제가 도와드릴 수 있습니다.
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="grp_board">
+                        <div class="grp_question">
+                            <div class="grp_badge">
+                                <span class="badge">산재보험</span>
+                                <span class="badge">중복보상</span>
+                            </div>
+                            <p class="tit">산재보험으로 치료비를 받았는데 민영 상해보험에서도 보상받을 수 있나요?</p>
+                        </div>
+                        <div class="grp_answer">
+                            <div class="top">
+                                <div class="grp_badge">
+                                    <span class="badge">답변</span>
+                                </div>
+                                <p class="name">MK 파트너스 김정철 대표손사</p>
+                            </div>
+                            <p class="txt">
+                                산재보험과 민영보험은 보상체계가 달라, 산재보험 수령 여부와 관계없이 민영보험의 진단비·입원비·휴업손해를 청구할 수 있습니다. 다만 치료비의 중복청구는 일부
+                                제한될 수 있으니 각각 지급사유를 구분해 청구서류를 작성해야 합니다.
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="grp_board">
+                        <div class="grp_question">
+                            <div class="grp_badge">
+                                <span class="badge">사망</span>
+                                <span class="badge">기존질환</span>
+                            </div>
+                            <p class="tit">아버지가 심근경색으로 돌아가셨는데 보험사에서 ‘기왕증으로 인한 사망’이라 보험금을 못 준다고 합니다.</p>
+                        </div>
+                        <div class="grp_answer">
+                            <div class="top">
+                                <div class="grp_badge">
+                                    <span class="badge">답변</span>
+                                </div>
+                                <p class="name">MK 파트너스 김정철 대표손사</p>
+                            </div>
+                            <p class="txt">
+                                사망과 기존 질환의 인과관계를 보험사가 입증해야 면책이 성립합니다. 과거 진료기록과 사망진단서, 부검소견서 등이 필요하며, 심근경색이 기왕증의 자연적 경과인지
+                                급성 사고인지 판단됩니다. 자료를 모아주시면 제가 면밀히 검토 후 대응방안을 제시해 드리겠습니다.
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="grp_board">
+                        <div class="grp_question">
+                            <div class="grp_badge">
+                                <span class="badge">주차장사고</span>
+                                <span class="badge">과실비율</span>
+                            </div>
+                            <p class="tit">주차장 접촉사고 과실비율에 대해 보험사끼리 협의했는데 제 과실이 80%라고 합니다. 억울합니다.</p>
+                        </div>
+                        <div class="grp_answer">
+                            <div class="top">
+                                <div class="grp_badge">
+                                    <span class="badge">답변</span>
+                                </div>
+                                <p class="name">MK 파트너스 김정철 대표손사</p>
+                            </div>
+                            <p class="txt">
+                                과실비율은 도로교통공단 분쟁조정 기준과 판례에 따라 결정됩니다. 사고 CCTV나 사진, 진술서 등 증거자료가 중요합니다. 자료를 주시면 표준 과실비율표를
+                                적용해 적정 비율을 검토해 드리겠습니다.
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="grp_board">
+                        <div class="grp_question">
+                            <div class="grp_badge">
+                                <span class="badge">해외치료</span>
+                                <span class="badge">영문서류</span>
+                            </div>
+                            <p class="tit">해외에서 다쳐서 치료를 받았는데, 진단서와 영수증이 영어로만 돼 있어요. 보험 청구할 수 있나요?</p>
+                        </div>
+                        <div class="grp_answer">
+                            <div class="top">
+                                <div class="grp_badge">
+                                    <span class="badge">답변</span>
+                                </div>
+                                <p class="name">MK 파트너스 김정철 대표손사</p>
+                            </div>
+                            <p class="txt">
+                                가능합니다. 다만 보험사에 공증번역본 제출이 필요합니다. 치료기관 진단서, 치료비 영수증, 여권 출입국 증빙자료를 보내주시면 번역공증부터 청구서류 준비까지
+                                지원해 드리겠습니다.
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="grp_board">
+                        <div class="grp_question">
+                            <div class="grp_badge">
+                                <span class="badge">입원</span>
+                                <span class="badge">일당지급</span>
+                            </div>
+                            <p class="tit">맹장수술로 3일 입원했는데 입원일당이 예상보다 적게 나왔습니다. 왜 그런 거죠?</p>
+                        </div>
+                        <div class="grp_answer">
+                            <div class="top">
+                                <div class="grp_badge">
+                                    <span class="badge">답변</span>
+                                </div>
+                                <p class="name">MK 파트너스 김정철 대표손사</p>
+                            </div>
+                            <p class="txt">
+                                입원일당은 약관상 ‘입원일수’와 ‘감액 규정’에 따라 다릅니다. 일부 상품은 4일 미만 단기 입원 시 절반만 지급하는 약관이 있습니다. 가입증권과 약관을
+                                확인해 드리면 정확한 산정 근거를 설명해 드리겠습니다.
+                            </p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+
+        </main>
+        <nav>
+            <ul class="gnb">
+                <li><a href="#">홈</a></li>
+                <li><a href="#">법률센터</a></li>
+                <li class="on"><a href="#">손해사정</a></li>
+                <li><a href="#">사은품</a></li>
+                <li><a href="#">내정보</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+
+</html>

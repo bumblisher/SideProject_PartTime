@@ -33,6 +33,27 @@ $(function () {
 		$(".popup").removeClass("on");
 	});
 
+	// bottom sheet
+	const openBtn = document.getElementById('openSheetBtn');
+	const backdrop = document.getElementById('sheetBackdrop');
+	const bottomSheet = document.getElementById('bottomSheet');
+	openBtn.addEventListener('click', () => {
+		bottomSheet.classList.add('active');
+		backdrop.classList.add('active');
+	});
+	backdrop.addEventListener('click', () => {
+		bottomSheet.classList.remove('active');
+		backdrop.classList.remove('active');
+	});
+	// (선택: sheet 아이템 클릭 시 시트 닫기)
+	document.querySelectorAll('.sheet-item').forEach(item => {
+		item.addEventListener('click', () => {
+			bottomSheet.classList.remove('active');
+			backdrop.classList.remove('active');
+			openBtn.textContent = item.textContent;
+		});
+	});
+
 	// 모든 .tabbox에 대해 탭 동작 적용
 	document.querySelectorAll('.tabbox').forEach(function (tabbox) {
 		const tabButtons = tabbox.querySelectorAll('.tab_list button');

@@ -34,7 +34,7 @@
             <div class="topbox hos">
                 <p class="tit">진료과를 선택하면,<br>
                     맞춤 병원을 추천해드려요.</p>
-                <button class="btn_select">진료과 선택</button>
+                <button class="btn_select" id="openSheetBtn">진료과 선택</button>
             </div>
             <ul class="list_hospital">
                 <li>
@@ -173,11 +173,26 @@
             <ul class="gnb">
                 <li class="on"><a href="#">홈</a></li>
                 <li><a href="#">법률센터</a></li>
-                <li><a href="#">보상센터</a></li>
-                <li><a href="#">공짜사은품</a></li>
-                <li><a href="#">마이페이지</a></li>
+                <li><a href="#">손해사정</a></li>
+                <li><a href="#">사은품</a></li>
+                <li><a href="#">내정보</a></li>
             </ul>
         </nav>
+        
+        <!-- Backdrop -->
+        <div class="sheet-backdrop" id="sheetBackdrop"></div>
+        <!-- Bottom Sheet -->
+        <div class="bottom-sheet" id="bottomSheet">
+            <ul class="sheet-list">
+                <li class="sheet-item">정형외과</li>
+                <li class="sheet-item">안과</li>
+                <li class="sheet-item">심장내과</li>
+                <li class="sheet-item">이비인후과</li>
+                <li class="sheet-item">피부과</li>
+                <li class="sheet-item">비뇨의학과</li>
+                <li class="sheet-item">산부인과</li>
+            </ul>
+        </div>
     </div>
 </body>
 
