@@ -30,7 +30,7 @@ header.top:not(.scrolled) .header_inner .btn_back{background: url('../images/ico
 header.top:not(.scrolled){background: transparent;transition: all 0.3s;}
 main{display: flex;flex:1;flex-direction: column;padding: 20px;}
 main > *{flex:none;}
-main > *:nth-last-child(2){margin-bottom: auto;}
+main:not():has(.grp_bot) > *:nth-last-child(2){margin-bottom: auto;}
 
 .topbox{margin: -20px -20px 0;padding:24px 20px;background: #D3E5F5;}
 .topbox .icobox{padding-right: 85px;background: url(../images/img_main01.svg) no-repeat top right;}
@@ -39,14 +39,17 @@ main > *:nth-last-child(2){margin-bottom: auto;}
 .topbox .tit{color:#000;font-size: 24px;font-weight: 700;}
 .topbox .txt{margin-top: 16px;color:#535E68;font-size: 18px;font-weight: 500;line-height: 140%;}
 .topbox .notibox{margin-top: 16px;}
-header.top + main .topbox{margin-top: -65px;padding: 97px 20px 44px;background: #152668;}
-header.top + main .topbox .tit{color:#fff;}
-header.top + main .topbox .txt{color:#DAE1E8;}
+.topbox.navy{margin-top: -65px;padding: 97px 20px 44px;background: #152668;}
+.topbox.navy .tit{color:#fff;}
+.topbox.navy .txt{color:#DAE1E8;}
 .topbox.bg03{background:#00AAFF;}
 .topbox.bg03 .tit{color:#fff;}
 .topbox.bg03 .txt{color:#DAE1E8;}
-header.top + main .topbox.hos{background: url(../images/bg_hospital.png) no-repeat center;background-size: cover;}
-header.top + main .topbox.hos .btn_select{margin-top: 20px;}
+.topbox.hos{background: url(../images/bg_hospital.png) no-repeat center;background-size: cover;}
+.topbox.hos .btn_select{margin-top: 20px;}
+.topbox.lawfirm{background: url(../images/bg_lawfirm.png) no-repeat center;background-size: cover;}
+.topbox.lawfirm .tit{color:#fff;margin-top: 8px;}
+
 
 .grp_bot{flex:none;margin-top: 20px;padding-top:30px;}
 main .grp_bot{flex:none;position: sticky;bottom:0px;margin: 20px -20px 0;padding:12px 20px 20px;background: #fff;box-shadow: 0 -10px 10px #ffffffcc;z-index: 30;}
@@ -337,13 +340,19 @@ p.txt.gray05{color:#495057;}
 .list_hospital li .btn_grp a.pt{background: #00AAFF;color:#fff;}
 .list_hospital li + li{margin-top: 12px;}
 
-.imgtop_detail {margin-top: -15px;}
+.imgtop_detail {margin-top: -20px;}
 .imgtop_detail .img{overflow: hidden;height: 248px;margin: 0 -20px;}
 .imgtop_detail .img img{width: 100%;height: 100%;object-fit: cover;object-position: center;}
 .imgtop_detail .top{display: flex;align-items: center;margin-top: 24px;}
 .imgtop_detail .top .tit{color:#302F3E;font-size: 22px;font-weight: 700;}
 .imgtop_detail .top a{display: inline-block;margin-left: auto;padding:7px 29px 7px 10px;border-radius: 16px;background: #D4F5FF url(../images/ico_hos_arrow.svg) no-repeat center right 10px;color:#00AAFF;}
 .imgtop_detail .call{margin-top: 16px;padding-left: 28px;background: url(../images/ico_call.svg) no-repeat center left;color:#535E68;font-size: 18px;font-weight: 500;}
+.imgtop_detail .txt{margin-top: 14px;color:#535E68;font-size: 18px;line-height: 140%;font-weight: 500;}
+.imgtop_detail .grp_btn{display: flex;margin-top: 24px;align-items: center;gap: 12px;}
+.imgtop_detail .grp_btn a{flex:1;display: inline-flex;gap:6px;align-items: center;justify-content: center;height: 46px;background:#DDE7F2;border-radius: 8px;font-size: 18px;font-weight: 700;color:#535E68}
+.imgtop_detail .grp_btn a::before{content:'';width: 20px;height: 20px;flex:none;background: url(../images/ico_btnlaw01.svg) no-repeat center;}
+.imgtop_detail .grp_btn a:nth-child(2)::before{background: url(../images/ico_btnlaw02.svg) no-repeat center;}
+.topbox + .imgtop_detail {margin-top: 0;}
 
 .dl_info dt{margin-top: 24px;color:#3F464D;font-size: 20px;font-weight: 600;line-height: 140%;}
 .dl_info dd{margin-top: 8px;color:#3F464D;font-size: 16px;font-weight: 500;line-height: 140%;}
