@@ -51,6 +51,8 @@ main:has(.grp_bot) > *:nth-last-child(2){margin-bottom: auto;}
 .topbox.hos .btn_select{margin-top: 20px;}
 .topbox.lawfirm{padding: 32px 20px;background: url(../images/bg_lawfirm.png) no-repeat center;background-size: cover;}
 .topbox.lawfirm .tit{margin-top: 8px;color:#fff;}
+.topbox.damage{padding: 32px 20px;background: url(../images/bg_damage.png) no-repeat center;background-size: cover;}
+.topbox.damage .tit{margin-top: 8px;color:#fff;}
 
 
 .grp_bot{flex:none;margin-top: 20px;padding-top:30px;}
@@ -359,6 +361,9 @@ p.txt.gray05{color:#495057;}
 .imgtop_detail .top .tit{color:#302F3E;font-size: 22px;font-weight: 700;}
 .imgtop_detail .top a{display: inline-block;margin-left: auto;padding:7px 29px 7px 10px;border-radius: 16px;background: #D4F5FF url(../images/ico_hos_arrow.svg) no-repeat center right 10px;color:#00AAFF;}
 .imgtop_detail .call{margin-top: 16px;padding-left: 28px;background: url(../images/ico_call.svg) no-repeat center left;color:#535E68;font-size: 18px;font-weight: 500;}
+.imgtop_detail .grp_code{display: flex;align-items: center;gap:10px;margin-top: 16px;padding-top: 16px;border-top: 1px solid #DAE1E8;}
+.imgtop_detail .grp_code span{font-size: 18px;font-weight: 500;color:#535E68}
+.imgtop_detail .grp_code .badge{font-size: 16px;font-weight: 500;color:#00AAFF;padding: 7px 11px;background: #D4F5FF;border-radius: 16px;}
 .imgtop_detail .txt{margin-top: 14px;color:#535E68;font-size: 18px;font-weight: 500;line-height: 140%;}
 .imgtop_detail .grp_btn{display: flex;align-items: center;margin-top: 24px;gap: 12px;}
 .imgtop_detail .grp_btn a{display: inline-flex;flex:1;align-items: center;justify-content: center;height: 46px;gap:6px;border-radius: 8px;background:#DDE7F2;color:#535E68;font-size: 18px;font-weight: 700;}
@@ -381,8 +386,8 @@ p.txt.gray05{color:#495057;}
 .box_card .list_card + ul {margin-top: 16px;padding-top: 16px;border-top: 1px solid #DDE7F2;}
 .box_card ul li{display: flex;align-items: center;align-items: center;gap: 8px;}
 .box_card ul li + li{margin-top: 7px;}
-.box_card ul li .tit{color:#86919C;font-size: 16px;font-weight: 500;}
-.box_card ul li .txt{color:#302F3E;font-size: 16px;font-weight: 500;}
+.box_card ul li .tit{color:#86919C;font-size: 16px;font-weight: 500;flex:none}
+.box_card ul li .txt{color:#302F3E;font-size: 16px;font-weight: 500;word-break: break-word;}
 
 .list_badge li + li{margin-top: 24px;}
 .list_badge li:nth-child(2) .badge{background: #FFEEF4;color:#F34588;}
