@@ -23,9 +23,14 @@ $(function () {
 		}
 	});
 
+	// 태그
+	$(".list_tag button").on("click", function () {
+		$(".list_tag button").removeClass("on");
+		$(this).addClass("on");
+	});
+
 	$(".dim").on("click", function () {
 		$(".popup").removeClass("on");
-		
 	});
 
 	// 모든 .tabbox에 대해 탭 동작 적용
