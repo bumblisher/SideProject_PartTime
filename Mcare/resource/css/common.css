@@ -631,6 +631,28 @@ p.txt.gray05{color:#495057;}
 .list_gift_board li .tit{margin-top: 12px;font-size: 18px;color:#302F3E}
 .list_gift_board li .point{margin-top: 6px;font-size: 20px;font-weight: 700;color:#302F3E}
 
+.my_name{font-size: 24px;color:#302F3E}
+.mypoint_box{margin-top: 24px;padding:16px 96px 16px 20px;background: #DBF1FD url(../images/ico_mypoint.svg) no-repeat center right 20px;border-radius: 8px;}
+.mypoint_box p{font-size: 18px;color:#302F3E}
+.mypoint_box .point{font-size: 20px;font-weight: 700;margin-top: 4px;}
+.grp_pointbtn{margin-top: 24px;display: flex;align-items: center;gap: 12px;}
+.grp_pointbtn a{display: flex;flex:1;align-items: center;justify-content: center;height: 46px;border: 1px solid #DAE1E8;color:#535E68;border-radius: 8px;font-size: 18px;font-weight: 700;}
+.mypoint_link li + li{border-top: 1px solid #DDE7F2;}
+.mypoint_link a{display: flex;align-items: center;height: 76px;color:#000;font-size: 20px;font-weight: 500;}
+.mypoint_link a::after{content:'';display: inline-block;width: 28px;height: 28px;margin-left: auto;background: url(../images/ico_my_arrow.svg) no-repeat center;}
+.mypoint_history{padding: 24px 20px;background: #F2F6FA;margin: 24px -20px 0;}
+.mypoint_history li{background: #fff;border-radius: 8px;}
+.mypoint_history li + li{margin-top: 16px;border: 0;}
+.mypoint_history li a{padding: 0 20px;box-sizing: border-box;}
+.mypoint_history li a::before{content:'';display: inline-block;margin-right: 10px;width: 28px;height: 28px;}
+.mypoint_history li:nth-child(1) a::before{background: url(../images/ico_my01.svg) no-repeat center;}
+.mypoint_history li:nth-child(2) a::before{background: url(../images/ico_my02.svg) no-repeat center;}
+.mypoint_history li:nth-child(3) a::before{background: url(../images/ico_my03.svg) no-repeat center;}
+.mypoint_history .grp_num{display: flex;align-items: center;border-top: 1px solid #DDE7F2;margin: 0 20px;height: 56px;}
+.mypoint_history .grp_num > div{flex:1;text-align: center;}
+.mypoint_history .grp_num > div + div{border-left: 1px solid #DDE7F2;}
+.mypoint_history .grp_num > div span{font-size: 16px;font-weight: 500;color: #86919C;}
+.mypoint_history .grp_num > div b{font-size: 16px;font-weight: 700;color:#3F464D;margin-left: 8px;}
 
 /* popup */
 .popup { overflow: hidden; display: none; position: fixed; top: 50%; left: 50%; z-index: 10001; width: 540px; border-radius: 10px; background: #fff;box-shadow: 0px 4px 30px 10px rgba(0, 0, 0, 0.1); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); } 
