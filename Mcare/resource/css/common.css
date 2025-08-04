@@ -220,6 +220,7 @@ nav ul li.on:nth-child(5) a::before{background: url(../images/ico_nav05_on.svg) 
 .titbox .tit.ico_help::before{content: '';display: inline-block;width: 24px;height: 24px;background: url(../images/ico_hlep.svg) no-repeat center;}
 .titbox .tit.ico_ex::before{content: '';display: inline-block;width: 24px;height: 24px;background: url(../images/ico_ex.svg) no-repeat center;}
 .titbox .tit.ico_chk::before{content: '';display: inline-block;width: 24px;height: 24px;background: url(../images/ico_chk.svg) no-repeat center;}
+.titbox .sub{font-size: 18px;color:#302F3E}
 .tabmenu + .titbox {margin-top: 20px;}
 .bar + .titbox {margin-top: 32px;}
 .titbox + .titbox{margin-top: 20px;}
@@ -252,6 +253,7 @@ p.txt.gray03{color:#7A7F88;}
 p.txt.gray04{color:#535E68;}
 p.txt.gray05{color:#495057;}
 
+.mt8{margin-top: 8px;}
 .mt10{margin-top: 10px;}
 .mt12{margin-top: 12px;}
 .mt16{margin-top: 16px;}
@@ -647,6 +649,7 @@ p.txt.gray05{color:#495057;}
 .popup .gift_pop ul li{padding: 8px;flex:1}
 .popup .gift_pop ul li b{font-size: 16px;font-weight: 600;}
 .popup .gift_pop ul li p{margin-top: 8px;font-size: 14px;}
+.popup .bg_txt{margin-top: 16px;display: flex;background: #F2F6FA;color:#302F3E;align-items: center;justify-content: center;height: 58px;border-radius: 8px;}
 
 @media (max-width: 1000px) {
     .pc_wrap .pc_form{display: none;}
