@@ -68,7 +68,7 @@ main .grp_bot{flex:none;position: sticky;bottom:0px;z-index: 30;margin: 16px -20
 .grp_bot .bot_bubble {position: absolute;left:50%;top:-40px;background: #302F3E;border-radius: 8px;padding: 10px 16px;color: #fff;font-size: 15px;font-weight: 500;box-sizing: border-box;transform: translateX(-50%);white-space: pre;}
 .grp_bot .bot_bubble::after {content: '';position: absolute;bottom: -9px; left: 50%;transform: translateX(-50%);width: 14px;height: 10px;background: #302F3E;clip-path: polygon(50% 100%, 0 0, 100% 0);}
 
-nav{height: 97px;}
+nav{height: 97px;position: relative;z-index: 100;}
 nav ul{display: flex;align-items: center;position: fixed;right:0;bottom: 0;left:0;z-index: 100;padding: 0 10px 0;border-radius: 10px 10px 0 0;background: #fff;box-sizing: border-box;box-shadow: 0px -1px 10px rgba(0, 0, 0, 0.08);}
 nav ul li{flex:1;text-align: center;}
 nav ul li a{display: flex;flex-direction: column;align-items: center;justify-content: center;height: 63px;gap:2px;color:#AEB3BE;font-size: 12px;font-weight: 600;transition: color 0.2s;}
@@ -98,29 +98,16 @@ nav ul li.on:nth-child(5) a::before{background: url(../images/ico_nav05_on.svg) 
 .tabmenu.tabonly ul li a{width: 100%;}
 
 /* pc버전 */
-.pc_wrap{display: flex;align-items: center;justify-content: center;width: 100%;margin: 0 auto;gap:80px;background: #F1F3F5;box-sizing: border-box;}
-.pc_wrap .pc_form{display: flex;flex:none;flex-direction: column;align-items: flex-start;position: relative;width: 400px;max-height:98vh;padding:30px 30px 90px;border-radius: 24px;background: #fff;box-sizing: border-box;}
-.pc_wrap .pc_form > .title{margin-top: 30px;color:#302F3E;font-size: 28px;font-weight: 700;line-height: 130%;}
-.pc_wrap .pc_form > .txt{margin-top: 16px;color:#495057;font-size: 16px;line-height: 130%;}
-.pc_wrap .pc_form .formbox{overflow: auto;flex:1;width: 100%;margin-top: 36px;}
-.pc_wrap .pc_form .pc_form_btn{display: flex;align-items: center;justify-content: center;position: absolute;right:0;bottom:0;left:0;height: 60px;border-radius: 0 0 24px 24px;background: #FF7EB0;color:#fff;font-size: 16px;font-weight: 700;}
-.pc_wrap .pc_form .pc_form_btn:disabled{background: #C7CFD7;color:#EFF3F8;}
-.pc_wrap .wrap{overflow: auto;flex:none;position: relative;width: 500px;height:100vh;background: #fff;}
-.pc_wrap .wrap header{position: sticky;box-shadow: 0 3px 10px #99999915;}
-.pc_wrap .wrap header + main{padding-top: 15px;}
+.pc_wrap{display: flex;align-items: center;justify-content: center;width: 100%;margin: 0 auto;gap:80px;background: #EBF0F5;box-sizing: border-box;}
+.pc_wrap .pc_form{display: flex;flex:none;flex-direction: column;position: relative;width: 400px;max-height:88vh;padding:30px 30px 0;background: #fff;box-sizing: border-box;overflow: auto;}
+.pc_wrap .pc_form .formbox{margin-top: 0;}
+.pc_wrap .pc_form .grp_bot{flex:none;position: sticky;bottom:0px;z-index: 30;margin: 16px -20px 0;padding:16px 20px 16px;background: #fff;box-shadow: 0 -10px 10px #ffffffcc;}
+
+.pc_wrap .wrap{overflow: auto;flex:none;position: relative;width: 500px;height:100vh;background: #fff;-ms-overflow-style: none;scrollbar-width: none;overscroll-behavior: none;}
+.pc_wrap .wrap header{position: sticky;box-shadow: 0 3px 10px #99999915;background: #1092EF;}
+.pc_wrap .wrap main{padding-bottom: 60px;}
 .pc_wrap .wrap nav{position:sticky;bottom:0;height: 60px;}
 .pc_wrap .wrap nav ul{position: absolute;padding-bottom: 0;}
-
-.pc_wrap  .grp_form + .grp_form{margin-top: 24px;}
-.pc_wrap  .grp_form > .tit{margin-bottom: 8px;color: #302F3E;font-size: 14px;font-weight: 700;line-height: 100%;}
-.pc_wrap  .grp_form > .cont input[type=text],
-.pc_wrap  .grp_form > .cont input[type=password],
-.pc_wrap  .grp_form > .cont select{width: 100%;height: 48px;padding:0 12px;border:1px solid #F1F3F5;border-radius:8px;background:#F1F3F5;font-size: 13px;box-sizing: border-box;transition: all 0.3s;}
-.pc_wrap  .grp_form > .cont select{background: #F1F3F5 url(../images/ico_select.svg) no-repeat center right 12px;appearance: none;}
-.pc_wrap  .grp_form > .cont input::placeholder{color:#868E96;}
-.pc_wrap  .grp_form > .cont input.invalid{background-color: #fff;border-color: #ED2227;}
-.pc_wrap  .grp_form > .cont input:focus,
-.pc_wrap  .grp_form > .cont select:focus{border:1px solid #212529;background-color:#fff;outline: none;}
 
 
 /* form */
