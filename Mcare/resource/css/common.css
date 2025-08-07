@@ -363,7 +363,7 @@ p.txt.gray05{color:#495057;}
 .imgtop_detail {margin-top: -20px;}
 .imgtop_detail .img{overflow: hidden;height: 248px;margin: 0 -20px;}
 .imgtop_detail .img img{width: 100%;height: 100%;object-fit: cover;object-position: center;}
-.imgtop_detail .img.kb{background: #545044;text-align: center;0}
+.imgtop_detail .img.kb{background: #545044;text-align: center;}
 .imgtop_detail .img.kb img{width: 375px;}
 .imgtop_detail .top{display: flex;align-items: center;margin-top: 24px;}
 .imgtop_detail .top .tit{color:#302F3E;font-size: 22px;font-weight: 700;}
