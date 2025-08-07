@@ -24,9 +24,12 @@ $(function () {
 	});
 
 	// 태그
-	$(".list_tag button").on("click", function () {
-		$(".list_tag button").removeClass("on");
+	$(".list_tag > button").on("click", function () {
+		$(".list_tag > button").removeClass("on");
 		$(this).addClass("on");
+	});
+	$(".list_tag.expand .btn_arrow").on("click", function () {
+		$(".list_tag.expand").toggleClass("ex");
 	});
 
 	$(".dim").on("click", function () {

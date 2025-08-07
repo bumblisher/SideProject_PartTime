@@ -407,13 +407,19 @@ p.txt.gray05{color:#495057;}
 .list_badge .badge{display: inline-block;padding: 4px 8px;border-radius: 12px;background: #FFF9EA;color:#9F7D2C;font-size: 14px;font-weight: 500;}
 .list_badge .txt{margin-top: 4px;padding: 0 4px;color:#38393A;font-size: 18px;font-weight: 500;line-height: 140%;}
 
-.list_tag{display: flex;flex-wrap: wrap;gap:8px;}
-.list_tag button{height: 43px;padding:0 14px;border: 1px solid #DAE1E8;border-radius: 22px;background: #fff;color:#535E68;font-size: 18px;font-weight: 500;}
-.list_tag button.on{background: #00AAFF;color:#fff;border-color: #00AAFF;}
+.list_tag{display: flex;flex-wrap: wrap;gap:8px;position: relative;}
+.list_tag > button{height: 43px;padding:0 14px;border: 1px solid #DAE1E8;border-radius: 22px;background: #fff;color:#535E68;font-size: 18px;font-weight: 500;}
+.list_tag > button.on{background: #00AAFF;color:#fff;border-color: #00AAFF;}
 
 .list_tag.line{margin-top: 32px;flex-wrap: nowrap;overflow: auto;}
 .list_tag.line button{flex:none}
 .list_tag.line:first-child{margin-top: 0;}
+
+.list_tag.expand{height: 94px;overflow: hidden;}
+.list_tag.expand > div{position: absolute;top:5px;right:3px;box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);border-radius: 50%;}
+.list_tag.expand .btn_arrow{width: 28px;height: 28px;background: url(../images/ico_circle_arrow.svg) no-repeat center;vertical-align: top;transition: all 0.3s;}
+.list_tag.expand.ex{height: auto;}
+.list_tag.expand.ex .btn_arrow{transform: rotate(180deg);}
 
 .list_board{margin-top: 32px;}
 .list_board li + li{margin-top: 32px;padding-top: 32px;border-top: 1px solid #DAE1E8;}
