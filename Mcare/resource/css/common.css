@@ -90,11 +90,11 @@ nav ul li.on:nth-child(5) a::before{background: url(../images/ico_nav05_on.svg) 
 .tabmenu{margin: 0;padding: 0 20px;border-bottom: 1px solid #E9ECEF;}
 .tabmenu ul{}
 .tabmenu ul li{position: relative;width: auto;margin-bottom: -1px;border-bottom: 1px solid #E9ECEF;}
-.tabmenu ul li a{display: inline-block;padding:12px 16px;color:#86919C;font-size: 18px;font-weight: 500;line-height: 140%;box-sizing: border-box;}
+.tabmenu ul li a{display: inline-block;padding:12px 10px;color:#86919C;font-size: 18px;font-weight: 500;line-height: 140%;box-sizing: border-box;}
 .tabmenu ul li a:hover{color:#302F3E;font-weight: 700;}
 .tabmenu ul li.on a{color:#302F3E;font-weight: 700;}
 .tabmenu ul li.on::after{content: '';position: absolute;right:0;bottom:0;left:0;border-bottom: 2px solid #302F3E;}
-.tabmenu.tabonly{position: sticky;top:0;z-index: 50;background: #fff;border-bottom:0;}
+.tabmenu.tabonly{position: sticky;top:0;z-index: 50;background: #fff;border-bottom:0;padding: 0;}
 .tabmenu.tabonly ul{display: flex;align-items: center;border-bottom: 1px solid #E9ECEF;}
 .tabmenu.tabonly ul li{flex:1;width:100%;text-align: center;box-sizing: border-box;}
 .tabmenu.tabonly ul li a{width: 100%;}
@@ -372,6 +372,10 @@ p.txt.gray05{color:#495057;}
 .dl_info dd{margin-top: 8px;color:#3F464D;font-size: 16px;font-weight: 500;line-height: 140%;}
 .dl_info dd ul li{display: flex; align-items: center; gap: 8px;color:#3F464D;font-size: 16px;font-weight: 500;line-height: 140%;margin-bottom: 4px;}
 .dl_info dd ul li .year{color:#86919C;}
+.dl_info.type2 dt{font-size: 18px;color:#535E68;font-weight: 700;}
+.dl_info.type2 dd{margin-top: 16px;}
+.dl_info.type2 ul li{font-size: 18px;color:#302F3E;font-weight: 400;}
+.dl_info.type2 ul li .tit{color:#535E68}
 
 .ly_step{display: flex;align-items: center;gap:16px}
 .ly_step > div{border-radius: 16px;padding: 20px 10px;background: #fff;flex:1;text-align: center;box-shadow: 0 0 30px rgba(95, 153, 215, 0.2);}
@@ -678,8 +682,10 @@ p.txt.gray05{color:#495057;}
 .list_point_empty .txt{font-size: 18px;line-height: 140%;margin-top: 8px;color: #535E68;}
 .list_point:empty + .list_point_empty{display: block;}
 
+.list_counsel{margin-top: 24px;}
 .list_counsel li{border-bottom: 1px solid #DAE1E8;}
-.list_counsel li a{display: block;padding: 20px 32px 20px 0;background: url(../images/ico_my_arrow.svg) no-repeat center right;}
+.list_counsel li + li{margin-top: 20px}
+.list_counsel li a{display: block;padding: 0 32px 20px 0;background: url(../images/ico_my_arrow.svg) no-repeat center right;}
 .list_counsel li a .tit{font-size: 18px;font-weight: 700;line-height: 24px;color:#302F3E;margin-top: 8px;}
 .list_counsel li a .date{font-size: 16px;font-weight: 500;line-height: 24px;color:#86919C;margin-top: 8px;}
 .list_counsel li a .badge{flex:none;display: inline-block;font-size: 16px;font-weight: 500;line-height: 24px;color:#0F95D8;padding: 2px 8px;border-radius: 14px;background: #D4F5FF;}
@@ -699,8 +705,8 @@ p.txt.gray05{color:#495057;}
 .grp_select_sch span{font-size: 16px;font-weight: 500;color:#3F464D}
 .grp_select_sch .btn_select{font-size: 16px;font-weight: 500;color:#3F464D;height: 30px;background: #fff url(../images/ico_btn_select.svg) no-repeat center right 0px;padding: 4px 26px 4px 8px;}
 
-.list_acco.board:first-child{margin-top: 0;}
-.list_acco.board li .acco_tit{display: block;}
+.list_acco.board{margin-top: 0;}
+.list_acco.board li .acco_tit{display: block;height: auto;padding: 24px 0;}
 .list_acco.board li .acco_tit::after{display: none;}
 .list_acco.board li .acco_tit .top{display: flex;align-items: center;width: 100%;box-sizing: border-box;}
 .list_acco.board li .acco_tit .top .badge{flex:none;display: inline-block;font-size: 16px;font-weight: 500;line-height: 24px;color:#86919C;padding: 2px 8px;border-radius: 14px;background: #DDE7F2;margin-right: 8px;}
@@ -708,6 +714,7 @@ p.txt.gray05{color:#495057;}
 .list_acco.board li .acco_tit .top::after{content: '';display: inline-block;width: 28px;height: 28px;margin-left: auto;border-radius: 50%;background: url(../images/ico_acco_board.svg) no-repeat center;transform: rotate(0deg);}
 .list_acco.board li .acco_tit .date{font-size: 16px;line-height: 140%;color:#86919C;margin-top: 8px;}
 .list_acco.board li.on .acco_tit .top::after{transform: rotate(180deg);}
+.list_acco.board li .acco_cont .grp_cont{min-height: 180px;}
 /* .list_acco.board li .grp_cont{height: 100%;overflow: auto;} */
 .list_acco_empty{display: none;text-align: center;}
 .list_acco_empty::before{content: '';width: 60px;height: 60px;display: block;margin: 80px auto 16px;background: url(../images/ico_counsel_empty.svg) no-repeat center}
