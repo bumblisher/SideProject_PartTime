@@ -16,6 +16,40 @@
     <script src="resource/js/jquery-3.4.1.min.js"></script>
     <script src="resource/js/main.js"></script>
     <title>Mcare</title>
+    <script>
+        $(function () {
+            var isAnimating = false;
+            var titboxTop = $('.titbox').first().offset().top - 132;
+            // 마우스 휠 이벤트 (PC)
+            $(window).on('wheel', function (e) {
+                if (window.scrollY <= 1 && !isAnimating && e.originalEvent.deltaY > 0) {
+                    isAnimating = true;
+                    $('html, body').stop().animate({ scrollTop: titboxTop }, 600, function () {
+                        isAnimating = false;
+                    });
+                }
+            });
+            // 터치 이벤트 (모바일)
+            var touchStartY = 0;
+            $(window).on('touchstart', function (e) {
+                if (window.scrollY <= 1) {
+                    touchStartY = e.originalEvent.touches[0].clientY;
+                }
+            });
+            $(window).on('touchend', function (e) {
+                if (window.scrollY <= 1 && !isAnimating) {
+                    var touchEndY = e.originalEvent.changedTouches[0].clientY;
+                    // 위에서 아래로 스와이프가 아니라, 아래 방향 스크롤일 때만
+                    if (touchStartY - touchEndY > 20) {
+                        isAnimating = true;
+                        $('html, body').stop().animate({ scrollTop: titboxTop }, 600, function () {
+                            isAnimating = false;
+                        });
+                    }
+                }
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -59,7 +93,7 @@
             <script>
                 var swiper = new Swiper(".tabmenu", {
                     slidesPerView: "auto",
-                    initialSlide:"3",
+                    initialSlide: "3",
                 });
             </script>
         </div>

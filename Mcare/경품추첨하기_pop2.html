@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="date=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="format-detection" content="email=no">
+    <link rel="stylesheet" href="resource/css/reset.css">
+    <link rel="stylesheet" href="resource/css/common.css">
+    <script src="resource/js/jquery-3.4.1.min.js"></script>
+    <script src="resource/js/main.js"></script>
+    <title>Mcare</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header sub">
+            <div class="header_inner">
+                <div class="left">
+                    <button class="btn_back"></button>
+                </div>
+                <h2>병원 방문 경품 추첨</h2>
+                <div class="right">
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="img_compbox">
+                <img src="resource/images/ico_hospital.svg" alt="">
+                <p class="tit">병원 방문 후 카카오톡으로<br>
+                    전달받은 인증번호를 입력해 주세요.</p>
+            </div>
+            <div class="formbox bg mt40">
+                <div class="grp_form">
+                    <p class="tit mb12">인증번호</p>
+                    <div class="cont">
+                        <input type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="titbox">
+                <p class="tit fz20">경품 안내</p>
+            </div>
+            <ul class="gift_ranking">
+                <li>
+                    <img src="resource/images/ico_rank01.svg" alt="">
+                    <b>1등</b>
+                    <p>5,000 포인트</p>
+                </li>
+                <li>
+                    <img src="resource/images/ico_rank02.svg" alt="">
+                    <b>2등</b>
+                    <p>3,000 포인트</p>
+                </li>
+                <li>
+                    <img src="resource/images/ico_rank03.svg" alt="">
+                    <b>3등</b>
+                    <p>500 포인트</p>
+                </li>
+            </ul>
+            <div class="grp_bot">
+                <button class="btn_bot">경품 추첨하기</button>
+            </div>
+        </main>
+        <div class="popup on" style="width:335px;">
+            <div class="pop_cont tac">
+                <img src="resource/images/ico_point2_pop.svg" alt="">
+                <p class="alert mt8">아쉽지만 다음기회에 다시 만나요.</p>
+                <div class="pop_btn">
+                    <button class="btn_cm">확인</button>
+                </div>
+            </div>
+        </div>
+        <div class="dim"></div>
+    </div>
+</body>
+
+</html>

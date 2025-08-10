@@ -71,7 +71,7 @@
                         </a>
                     </li>
                 </ul>
-                <div class="main_banner-pagination"></div>
+                <div class="sub_banner-pagination"></div>
                 <!-- Initialize Swiper -->
                 <script>
                     var swiper = new Swiper(".main_banner", {
@@ -81,9 +81,8 @@
                         },
                         grabCursor: true,
                         pagination: {
-                            el: ".main_banner-pagination",
-                            clickable: true,
-                            type: 'bullets'
+                            el: ".sub_banner-pagination",
+                            type: 'fraction'
                         }
                     });
                 </script>
@@ -97,7 +96,7 @@
             <div class="main_img">
                 <a href="#">
                     <p>보상<br>상담센터<span>손해사정사에게 상담</span></p>
-                    <img src="resource/images/img_main01.svg" alt="">
+                    <img src="resource/images/img_main01.apng" alt="" style="width: 65px;height: 65px;">
                 </a>
                 <a href="#">
                     <p>법률보험</p>
@@ -231,7 +230,7 @@
                         약관사항을 점검해 드립니다.</p>
                 </a>
             </div>
-            <button class="btn_chat"></button>
+            <button class="btn_chat"><span>채팅하기</span></button>
         </main>
         <nav>
             <ul class="gnb">
