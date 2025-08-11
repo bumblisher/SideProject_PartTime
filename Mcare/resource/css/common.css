@@ -329,7 +329,7 @@ p.txt.gray05{color:#495057;}
 .main_link .tit{margin-bottom: 4px;color:#495057;font-size: 20px;font-weight: 500;line-height: 130%;}
 .main_link .txt{color:#797979;font-size: 18px;line-height: 130%;}
 
-.btn_chat{position: fixed;right:21px;bottom: 128px;z-index: 10;width: 60px;height: 60px;padding-left: 53px;border-radius: 30px;background:url(../images/ico_btn_chat.svg), linear-gradient(135deg, #10BFEF 0%, #1083EF 100%);background-position: left 16px center,center; background-repeat: no-repeat,no-repeat;box-sizing: border-box;box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);animation: chatWidth 5s ease-in-out 2s 1;text-align: left;}
+.btn_chat{position: fixed;right:21px;bottom: 94px;z-index: 10;width: 60px;height: 60px;padding-left: 53px;border-radius: 30px;background:url(../images/ico_btn_chat.svg), linear-gradient(135deg, #10BFEF 0%, #1083EF 100%);background-position: left 16px center,center; background-repeat: no-repeat,no-repeat;box-sizing: border-box;box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);animation: chatWidth 5s ease-in-out 2s 1;text-align: left;}
 .btn_chat span{color:#fff;font-size: 20px;font-weight: 700;white-space: nowrap;opacity: 0;animation: chatOpacity 5s ease-in-out 2s 1;}
 @keyframes chatWidth {
     0% {width: 60px;}
