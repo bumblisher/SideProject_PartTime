@@ -113,6 +113,7 @@ main .tabmenu.tabonly::after{right:0px;left:0px;}
 .pc_wrap .wrap nav{position:sticky;bottom:0;height: 60px;}
 .pc_wrap .wrap nav ul{position: absolute;padding-bottom: 0;}
 
+.pc_wrap header.sub.top{position: absolute;}
 
 /* form */
 .badge_time{display: inline-flex;align-items: center;justify-content: center;margin-bottom: 24px;padding:8px 12px 8px 40px;border-radius: 18px;background: #D4F5FF url(../images/ico_time.svg) no-repeat left 12px center;color:#0F95D8;font-size: 14px;font-weight: 600;line-height: 130%;}
