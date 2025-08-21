@@ -109,7 +109,7 @@ main .tabmenu.tabonly::after{right:0px;left:0px;}
 .pc_wrap .pc_form .grp_bot{flex:none;position: sticky;bottom:0px;z-index: 30;margin: 16px -20px 0;padding:16px 20px 16px;background: #fff;box-shadow: 0 -10px 10px #ffffffcc;}
 
 .pc_wrap .wrap{overflow: auto;flex:none;position: relative;width: 500px;height:100vh;background: #fff;-ms-overflow-style: none;scrollbar-width: none;overscroll-behavior: none;}
-.pc_wrap .wrap main{padding-bottom: 60px;}
+/* .pc_wrap .wrap main{padding-bottom: 60px;} */
 .pc_wrap .wrap nav{position:sticky;bottom:0;height: 60px;}
 .pc_wrap .wrap nav ul{position: absolute;padding-bottom: 0;}
 
