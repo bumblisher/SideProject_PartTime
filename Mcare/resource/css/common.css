@@ -115,6 +115,7 @@ main .tabmenu.tabonly::after{right:0px;left:0px;}
 
 .pc_wrap header.sub.top{position: absolute;}
 .pc_wrap header.sub{position: sticky;}
+.pc_wrap header.sub + main{padding-top:15px;}
 .pc_wrap header.sub + .tabmenu{flex:none;margin-top:0;}
 
 /* form */
