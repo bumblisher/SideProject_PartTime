@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="date=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="format-detection" content="email=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="resource/css/reset.css">
+    <link rel="stylesheet" href="resource/css/common.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="resource/js/jquery-3.4.1.min.js"></script>
+    <script src="resource/js/main.js"></script>
+    <title>Mcare</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header sub tab">
+            <div class="header_inner">
+                <div class="left">
+                    <button class="btn_back"></button>
+                </div>
+                <h2>이벤트</h2>
+                <div class="right">
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="swiper tabmenu tabonly">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                        <a href="#">진행중</a>
+                    </li>
+                    <li class="swiper-slide on">
+                        <a href="#">종료</a>
+                    </li>
+                </ul>
+                <div class="main_banner-pagination"></div>
+                <!-- Initialize Swiper -->
+                <script>
+                    var swiper = new Swiper(".tabmenu", {
+                        slidesPerView: "auto",
+                    });
+                </script>
+            </div>
+            <ul class="list_acco board">
+                <li>
+                    <button class="acco_tit">
+                        <div class="top">
+                            <span class="badge">이벤트</span>
+                            <p class="tit">제목제목제목제목제목제목제목제목제목</p>
+                        </div>
+                        <p class="date">25.10.10 ~ 25.12.12 종료</p>
+                    </button>
+                    <div class="acco_cont">
+                        <div class="grp_cont">
+                            <p class="txt">이벤트 내용</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <button class="acco_tit">
+                        <div class="top">
+                            <span class="badge">이벤트</span>
+                            <p class="tit">제목제목제목제목제목제목제목제목제목</p>
+                        </div>
+                        <p class="date">25.10.10 ~ 25.12.12 종료</p>
+                    </button>
+                    <div class="acco_cont">
+                        <div class="grp_cont">
+                            <p class="txt">이벤트 내용</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <button class="acco_tit">
+                        <div class="top">
+                            <span class="badge">이벤트</span>
+                            <p class="tit">제목제목제목제목제목제목제목제목제목</p>
+                        </div>
+                        <p class="date">25.10.10 ~ 25.12.12 종료</p>
+                    </button>
+                    <div class="acco_cont">
+                        <div class="grp_cont">
+                            <p class="txt">이벤트 내용</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="list_acco_empty">
+                <p class="tit">진행중인 이벤트가 없습니다.</p>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

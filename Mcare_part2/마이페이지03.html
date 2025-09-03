@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="date=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="format-detection" content="email=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="resource/css/reset.css">
+    <link rel="stylesheet" href="resource/css/common.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="resource/js/jquery-3.4.1.min.js"></script>
+    <script src="resource/js/main.js"></script>
+    <title>Mcare</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header sub tab">
+            <div class="header_inner">
+                <div class="left">
+                    <button class="btn_back"></button>
+                </div>
+                <h2>내가 받은 사은품</h2>
+                <div class="right">
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="swiper tabmenu tabonly">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                        <a href="#">사용가능</a>
+                    </li>
+                    <li class="swiper-slide on">
+                        <a href="#">사용완료 및 기간만료</a>
+                    </li>
+                </ul>
+                <div class="main_banner-pagination"></div>
+                <!-- Initialize Swiper -->
+                <script>
+                    var swiper = new Swiper(".tabmenu", {
+                        slidesPerView: "auto",
+                    });
+                </script>
+            </div>
+            <ul class="list_mygift">
+                <li>
+                    <a href="#">
+                        <img src="resource/images/img_gift02.png" alt="">
+                        <div>
+                            <p class="sub">모바일 상품권</p>
+                            <p class="tit">이마트 3만원 모바일 상품권</p>
+                            <p class="date">사용기한 : 2025.07.27</p>
+                            <p class="badge used">사용완료</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="resource/images/img_gift02.png" alt="">
+                        <div>
+                            <p class="sub">모바일 상품권</p>
+                            <p class="tit">이마트 3만원 모바일 상품권</p>
+                            <p class="date">사용기한 : 2025.07.27</p>
+                            <p class="badge">기간만료</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div class="list_mygift_empty">
+                <p class="tit">사용완료 및 기간만료된 <br>
+                    사은품이 없습니다.</p>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
